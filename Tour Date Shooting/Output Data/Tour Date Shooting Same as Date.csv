@@ -1,0 +1,518 @@
+name,personId,gameId,team,opponent,gameDate,gameType,gameLabel,gameSubLabel,seriesGameNumber,win,home,numMinutes,points,assists,blocks,steals,fieldGoalsAttempted,fieldGoalsMade,fieldGoalsPercentage,threePointersAttempted,threePointersMade,threePointersPercentage,freeThrowsAttempted,freeThrowsMade,freeThrowsPercentage,reboundsDefensive,reboundsOffensive,reboundsTotal,foulsPersonal,turnovers,plusMinusPoints,trueGameType,tour_date,month,day
+Norman Powell,1626181,22401198,Los Angeles Clippers,Golden State Warriors,2025-04-13T15:30:00Z,Regular Season,NA,NA,0,1,0,43.52,11,0,0,1,13,4,0.308,6,1,0.167,2,2,1,2,0,2,4,2,17,Regular Season,TRUE,4,13
+Brandin Podziemski,1641764,22401183,Golden State Warriors,Portland Trail Blazers,2025-04-11T22:00:00Z,Regular Season,NA,NA,0,1,0,29.41,10,3,0,2,11,4,0.364,6,2,0.333,0,0,0,6,1,7,0,0,31,Regular Season,TRUE,4,11
+Anthony Edwards,1630162,22401179,Minnesota Timberwolves,Brooklyn Nets,2025-04-11T21:00:00Z,Regular Season,NA,NA,0,1,1,30.31,9,5,2,1,11,4,0.364,7,1,0.143,0,0,0,4,0,4,3,0,16,Regular Season,TRUE,4,11
+Dyson Daniels,1630700,22401173,Atlanta Hawks,Philadelphia 76ers,2025-04-11T19:00:00Z,Regular Season,NA,NA,0,1,0,36.39,8,8,2,3,11,4,0.364,4,0,0,2,0,0,8,2,10,0,2,14,Regular Season,TRUE,4,11
+Pascal Siakam,1627783,22401168,Indiana Pacers,Cleveland Cavaliers,2025-04-10T19:00:00Z,Regular Season,NA,NA,0,1,1,33.02,10,2,1,0,10,4,0.4,2,1,0.5,3,1,0.333,7,1,8,1,2,4,Regular Season,TRUE,4,10
+Malik Monk,1628370,22400957,Sacramento Kings,Golden State Warriors,2025-03-13T22:00:00Z,Regular Season,NA,NA,0,0,0,32.24,7,6,1,2,13,3,0.231,5,0,0,3,1,0.333,3,1,4,3,4,-1,Regular Season,TRUE,3,13
+Onyeka Okongwu,1630168,22400945,Atlanta Hawks,Charlotte Hornets,2025-03-12T19:30:00Z,Regular Season,NA,NA,0,1,1,30.3,7,1,0,0,12,3,0.25,3,1,0.333,0,0,0,3,7,10,5,0,9,Regular Season,TRUE,3,12
+Shaedon Sharpe,1631101,22400938,Portland Trail Blazers,Golden State Warriors,2025-03-10T22:00:00Z,Regular Season,NA,NA,0,0,0,29.27,9,8,0,0,10,3,0.3,4,1,0.25,3,2,0.667,4,3,7,2,5,-3,Regular Season,TRUE,3,10
+Ryan Rollins,1631157,22400776,Milwaukee Bucks,Minnesota Timberwolves,2025-02-12T20:00:00Z,Regular Season,NA,NA,0,1,0,26.26,4,3,0,1,12,2,0.167,4,0,0,0,0,0,3,2,5,0,1,14,Regular Season,TRUE,2,12
+Jaden Hardy,1630702,22301196,Dallas Mavericks,Oklahoma City Thunder,2024-04-14T15:30:00Z,Regular Season,NA,NA,NA,0,0,28,9,3,0,2,14,4,0.286,4,1,0.25,0,0,0,4,0,4,5,4,-26,Regular Season,TRUE,4,14
+AJ Griffin,1631100,22301188,Atlanta Hawks,Indiana Pacers,2024-04-14T13:00:00Z,Regular Season,NA,NA,NA,0,0,19,8,0,1,0,14,4,0.286,5,0,0,0,0,0,0,0,0,0,1,-17,Regular Season,TRUE,4,14
+Brandon Boston Jr.,1630527,22301184,Los Angeles Clippers,Utah Jazz,2024-04-12T22:30:00Z,Regular Season,NA,NA,NA,0,1,24,10,1,0,1,12,4,0.333,2,0,0,2,2,1,3,2,5,4,4,0,Regular Season,TRUE,4,12
+Anthony Edwards,1630162,22301178,Minnesota Timberwolves,Atlanta Hawks,2024-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,27,14,4,0,2,12,4,0.333,5,0,0,6,6,1,4,0,4,4,3,0,Regular Season,TRUE,4,12
+Eric Gordon,201569,22301165,Phoenix Suns,Los Angeles Clippers,2024-04-10T22:30:00Z,Regular Season,NA,NA,NA,1,0,23,11,0,0,1,10,4,0.4,6,2,0.333,1,1,1,0,0,0,0,0,2,Regular Season,TRUE,4,10
+Brook Lopez,201572,22301162,Milwaukee Bucks,Orlando Magic,2024-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,30,10,4,3,1,10,4,0.4,6,2,0.333,1,0,0,2,2,4,0,1,12,Regular Season,TRUE,4,10
+Jordan Nwora,1629670,22301160,Toronto Raptors,Brooklyn Nets,2024-04-10T19:30:00Z,Regular Season,NA,NA,NA,0,0,18,11,2,1,0,10,4,0.4,5,2,0.4,2,1,0.5,3,1,4,1,0,-6,Regular Season,TRUE,4,10
+Evan Mobley,1630596,22301158,Cleveland Cavaliers,Memphis Grizzlies,2024-04-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,31,12,1,4,3,10,4,0.4,4,2,0.5,2,2,1,9,3,12,1,4,12,Regular Season,TRUE,4,10
+Klay Thompson,202691,22300952,Golden State Warriors,Dallas Mavericks,2024-03-13T20:30:00Z,Regular Season,NA,NA,NA,0,0,26,8,0,1,1,13,3,0.231,7,2,0.286,0,0,0,3,1,4,0,2,-13,Regular Season,TRUE,3,13
+Payton Pritchard,1630202,22300943,Boston Celtics,Utah Jazz,2024-03-12T21:00:00Z,Regular Season,NA,NA,NA,1,0,25,10,2,0,0,12,3,0.25,9,2,0.222,2,2,1,2,0,2,2,1,14,Regular Season,TRUE,3,12
+Jordan Goodwin,1630692,22300940,Memphis Grizzlies,Washington Wizards,2024-03-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,32,8,7,1,1,12,3,0.25,5,1,0.2,2,1,0.5,9,3,12,2,2,2,Regular Season,TRUE,3,12
+Bilal Coulibaly,1641731,22300940,Washington Wizards,Memphis Grizzlies,2024-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,11,4,1,2,12,3,0.25,10,3,0.3,2,2,1,4,1,5,3,2,-8,Regular Season,TRUE,3,12
+Dorian Finney-Smith,1627827,22300930,Brooklyn Nets,Cleveland Cavaliers,2024-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,33,11,4,1,0,10,3,0.3,9,3,0.333,2,2,1,2,2,4,1,0,3,Regular Season,TRUE,3,10
+Jabari Smith Jr.,1631095,22300929,Houston Rockets,Sacramento Kings,2024-03-10T18:00:00Z,Regular Season,NA,NA,NA,1,0,33,10,2,0,3,10,3,0.3,6,2,0.333,2,2,1,9,2,11,3,3,16,Regular Season,TRUE,3,10
+Immanuel Quickley,1630193,22300764,Toronto Raptors,San Antonio Spurs,2024-02-12T19:30:00Z,Regular Season,NA,NA,NA,0,1,25,7,3,1,1,12,2,0.167,9,1,0.111,2,2,1,3,0,3,2,3,-24,Regular Season,TRUE,2,12
+Klay Thompson,202691,22300757,Golden State Warriors,Phoenix Suns,2024-02-10T20:30:00Z,Regular Season,NA,NA,NA,1,1,24,5,1,1,1,10,2,0.2,7,1,0.143,0,0,0,2,0,2,0,1,-3,Regular Season,TRUE,2,10
+Devin Vassell,1630170,22300548,San Antonio Spurs,Chicago Bulls,2024-01-13T20:30:00Z,Regular Season,NA,NA,NA,0,1,33,5,2,0,1,13,1,0.077,8,1,0.125,3,2,0.667,4,0,4,0,2,-13,Regular Season,TRUE,1,13
+Malcolm Brogdon,1627763,42200217,Boston Celtics,Philadelphia 76ers,2023-05-14T15:30:00Z,Playoffs,East - Conf. Semifinals,NA,7,1,1,28,12,2,0,0,14,5,0.357,6,2,0.333,0,0,0,1,1,2,2,0,20,Postseason,TRUE,5,14
+Darius Garland,1629636,42200133,Cleveland Cavaliers,New York Knicks,2023-04-21T20:30:00Z,Playoffs,East - First Round,NA,3,0,0,32,10,3,0,4,21,4,0.19,7,1,0.143,2,1,0.5,2,0,2,2,3,-21,Postseason,TRUE,4,21
+Patrick Williams,1630172,52200111,Chicago Bulls,Toronto Raptors,2023-04-12T19:00:00Z,Play-in Tournament,East Play-In,NA,NA,1,0,25,10,2,2,2,12,4,0.333,5,2,0.4,0,0,0,0,2,2,1,1,3,Postseason,TRUE,4,12
+Talen Horton-Tucker,1629659,22201022,Utah Jazz,Miami Heat,2023-03-13T19:30:00Z,Regular Season,NA,NA,NA,0,0,27,9,8,0,1,13,3,0.231,3,1,0.333,2,2,1,4,2,6,1,6,-11,Regular Season,TRUE,3,13
+Kevon Looney,1626172,22201012,Golden State Warriors,Milwaukee Bucks,2023-03-11T20:30:00Z,Regular Season,NA,NA,NA,1,1,35,7,4,0,5,11,3,0.273,0,0,0,2,1,0.5,8,7,15,2,0,10,Regular Season,TRUE,3,11
+Jaden McDaniels,1630183,22200841,Minnesota Timberwolves,Memphis Grizzlies,2023-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,22,6,1,0,0,10,2,0.2,5,2,0.4,0,0,0,2,1,3,3,0,-12,Regular Season,TRUE,2,10
+Caris LeVert,1627747,52100101,Cleveland Cavaliers,Brooklyn Nets,2022-04-12T19:00:00Z,Play-in Tournament,East Play-In,NA,NA,0,0,40,12,7,0,3,12,4,0.333,2,1,0.5,3,3,1,6,1,7,3,2,2,Postseason,TRUE,4,12
+Trey Lyles,1626168,22101229,Sacramento Kings,Phoenix Suns,2022-04-10T21:30:00Z,Regular Season,NA,NA,NA,1,0,18,9,1,0,1,10,4,0.4,1,0,0,2,1,0.5,7,0,7,1,3,7,Regular Season,TRUE,4,10
+Devin Cannady,1629962,22101227,Orlando Magic,Miami Heat,2022-04-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,33,15,2,0,0,10,4,0.4,9,4,0.444,3,3,1,0,0,0,1,0,18,Regular Season,TRUE,4,10
+Lamar Stevens,1630205,22101218,Cleveland Cavaliers,Milwaukee Bucks,2022-04-10T15:30:00Z,Regular Season,NA,NA,NA,1,1,20,8,2,1,0,10,4,0.4,0,0,0,0,0,0,1,2,3,1,3,-22,Regular Season,TRUE,4,10
+Aleksej Pokusevski,1630197,22101065,Oklahoma City Thunder,Orlando Magic,2022-03-20T18:00:00Z,Regular Season,NA,NA,NA,0,0,31,7,5,2,2,20,3,0.15,10,1,0.1,0,0,0,5,2,7,2,5,17,Regular Season,TRUE,3,20
+Fred VanVleet,1627832,22101028,Toronto Raptors,Los Angeles Lakers,2022-03-14T22:30:00Z,Regular Season,NA,NA,NA,1,0,40,11,7,0,1,14,3,0.214,12,2,0.167,4,3,0.75,7,0,7,3,2,21,Regular Season,TRUE,3,14
+Jordan Clarkson,203903,22101027,Utah Jazz,Milwaukee Bucks,2022-03-14T22:00:00Z,Regular Season,NA,NA,NA,0,1,31,8,1,0,1,14,3,0.214,9,2,0.222,0,0,0,1,1,2,3,2,-21,Regular Season,TRUE,3,14
+Fred VanVleet,1627832,22101003,Toronto Raptors,Phoenix Suns,2022-03-11T21:00:00Z,Regular Season,NA,NA,NA,1,0,37,10,4,1,0,11,3,0.273,8,2,0.25,2,2,1,8,0,8,4,5,-4,Regular Season,TRUE,3,11
+Khris Middleton,203114,42000301,Milwaukee Bucks,Atlanta Hawks,2021-06-23T20:30:00Z,Playoffs,East - Conf. Finals,NA,1,0,1,40,15,4,0,2,23,6,0.261,9,0,0,4,3,0.75,5,0,5,2,1,-13,Postseason,TRUE,6,23
+Lonnie Walker IV,1629022,22000458,San Antonio Spurs,New York Knicks,2021-05-13T19:30:00Z,Regular Season,NA,NA,NA,0,0,29,12,2,0,0,13,5,0.385,6,2,0.333,0,0,0,3,1,4,0,0,13,Regular Season,TRUE,5,13
+Kelan Martin,1629103,22001048,Indiana Pacers,Milwaukee Bucks,2021-05-13T19:00:00Z,Regular Season,NA,NA,NA,0,1,26,12,1,1,0,13,5,0.385,5,2,0.4,0,0,0,5,4,9,4,0,11,Regular Season,TRUE,5,13
+Malachi Flynn,1630201,22000831,Toronto Raptors,San Antonio Spurs,2021-04-14T19:30:00Z,Regular Season,NA,NA,NA,1,1,32,16,7,0,2,14,4,0.286,7,3,0.429,6,5,0.833,3,1,4,2,0,-4,Regular Season,TRUE,4,14
+D'Angelo Russell,1626156,22000834,Minnesota Timberwolves,Milwaukee Bucks,2021-04-14T16:30:00Z,Regular Season,NA,NA,NA,0,1,22,15,6,0,1,14,4,0.286,5,1,0.2,6,6,1,2,0,2,0,5,-6,Regular Season,TRUE,4,14
+Cameron Payne,1626166,22000822,Phoenix Suns,Houston Rockets,2021-04-12T22:00:00Z,Regular Season,NA,NA,NA,1,1,21,11,4,0,0,12,4,0.333,6,3,0.5,0,0,0,1,1,2,2,0,15,Regular Season,TRUE,4,12
+Reggie Bullock,203493,22000815,New York Knicks,Los Angeles Lakers,2021-04-12T19:30:00Z,Regular Season,NA,NA,NA,1,1,30,12,3,0,2,12,4,0.333,10,3,0.3,1,1,1,2,0,2,3,0,19,Regular Season,TRUE,4,12
+Reggie Bullock,203493,22000809,New York Knicks,Toronto Raptors,2021-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,27,10,0,0,4,11,4,0.364,8,2,0.25,0,0,0,3,0,3,1,1,11,Regular Season,TRUE,4,11
+Taurean Prince,1627752,22000807,Cleveland Cavaliers,New Orleans Pelicans,2021-04-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,26,11,2,1,0,11,4,0.364,4,0,0,3,3,1,4,1,5,3,3,-1,Regular Season,TRUE,4,11
+Will Barton,203115,22000806,Denver Nuggets,Boston Celtics,2021-04-11T15:00:00Z,Regular Season,NA,NA,NA,0,1,34,13,3,0,1,11,4,0.364,3,1,0.333,5,4,0.8,4,2,6,1,2,-4,Regular Season,TRUE,4,11
+Marcus Smart,203935,22000806,Boston Celtics,Denver Nuggets,2021-04-11T15:00:00Z,Regular Season,NA,NA,NA,1,0,34,14,5,0,0,11,4,0.364,6,2,0.333,5,4,0.8,3,1,4,4,0,-5,Regular Season,TRUE,4,11
+Montrezl Harrell,1626149,22000800,Los Angeles Lakers,Brooklyn Nets,2021-04-10T20:30:00Z,Regular Season,NA,NA,NA,1,0,23,10,2,2,1,10,4,0.4,0,0,0,4,2,0.5,6,2,8,2,1,5,Regular Season,TRUE,4,10
+Julius Randle,203944,22000573,New York Knicks,Milwaukee Bucks,2021-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,7,6,1,0,11,3,0.273,2,1,0.5,0,0,0,7,1,8,3,6,-19,Regular Season,TRUE,3,11
+LaMelo Ball,1630163,22000568,Charlotte Hornets,Detroit Pistons,2021-03-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,29,7,9,0,1,11,3,0.273,5,1,0.2,0,0,0,4,1,5,4,5,3,Regular Season,TRUE,3,11
+Rui Hachimura,1629060,22000566,Washington Wizards,Memphis Grizzlies,2021-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,25,11,0,0,0,10,3,0.3,3,1,0.333,4,4,1,6,0,6,0,0,-17,Regular Season,TRUE,3,10
+Mike Muscala,203488,22000390,Oklahoma City Thunder,Los Angeles Lakers,2021-02-10T22:00:00Z,Regular Season,NA,NA,NA,0,0,27,6,7,0,0,10,2,0.2,5,0,0,2,2,1,3,0,3,1,0,2,Regular Season,TRUE,2,10
+De'Anthony Melton,1629001,21900964,Memphis Grizzlies,Orlando Magic,2020-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,26,7,6,1,1,10,3,0.3,6,1,0.167,0,0,0,5,2,7,1,0,0,Regular Season,TRUE,3,10
+Reggie Bullock,203493,21900811,New York Knicks,Washington Wizards,2020-02-12T19:30:00Z,Regular Season,NA,NA,NA,0,1,24,5,0,0,1,12,2,0.167,5,1,0.2,0,0,0,1,1,2,3,2,-18,Regular Season,TRUE,2,12
+Terrence Ross,203082,21900808,Orlando Magic,Detroit Pistons,2020-02-12T19:00:00Z,Regular Season,NA,NA,NA,1,1,36,5,1,1,4,12,2,0.167,9,1,0.111,0,0,0,2,0,2,1,1,10,Regular Season,TRUE,2,12
+Ty Jerome,1629660,21900801,Phoenix Suns,Los Angeles Lakers,2020-02-10T22:30:00Z,Regular Season,NA,NA,NA,0,0,20,9,2,0,1,10,2,0.2,3,0,0,7,5,0.714,3,1,4,0,1,-14,Regular Season,TRUE,2,10
+Derrick White,1628401,21900799,San Antonio Spurs,Denver Nuggets,2020-02-10T21:00:00Z,Regular Season,NA,NA,NA,0,0,18,15,4,0,0,10,2,0.2,4,1,0.25,10,10,1,2,0,2,3,1,-13,Regular Season,TRUE,2,10
+Damian Lillard,203081,41800313,Portland Trail Blazers,Golden State Warriors,2019-05-18T21:00:00Z,Playoffs,West - Conf. Finals,NA,3,0,1,39,19,6,0,2,18,5,0.278,9,3,0.333,8,6,0.75,6,0,6,3,5,-23,Postseason,TRUE,5,18
+Will Barton,203115,21801228,Denver Nuggets,Minnesota Timberwolves,2019-04-10T22:30:00Z,Regular Season,NA,NA,NA,1,1,32,10,4,1,1,10,4,0.4,4,1,0.25,2,1,0.5,8,1,9,1,1,9,Regular Season,TRUE,4,10
+Shaquille Harrison,1627885,21801224,Chicago Bulls,Philadelphia 76ers,2019-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,20,11,0,2,0,10,4,0.4,3,1,0.333,2,2,1,3,0,3,0,0,-35,Regular Season,TRUE,4,10
+Shake Milton,1629003,21801224,Philadelphia 76ers,Chicago Bulls,2019-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,28,9,2,3,2,10,4,0.4,3,1,0.333,0,0,0,1,0,1,4,0,-6,Regular Season,TRUE,4,10
+Damion Lee,1627814,21801225,Golden State Warriors,Memphis Grizzlies,2019-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,23,10,2,0,0,10,4,0.4,4,1,0.25,1,1,1,4,1,5,0,0,-9,Regular Season,TRUE,4,10
+Terrance Ferguson,1628390,21801226,Oklahoma City Thunder,Milwaukee Bucks,2019-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,33,11,5,0,0,10,4,0.4,9,3,0.333,0,0,0,6,0,6,4,3,4,Regular Season,TRUE,4,10
+Terrence Ross,203082,21801015,Orlando Magic,Washington Wizards,2019-03-13T19:00:00Z,Regular Season,NA,NA,NA,0,0,29,7,1,1,0,13,3,0.231,6,0,0,1,1,1,3,0,3,1,1,-17,Regular Season,TRUE,3,13
+Allonzo Trier,1629019,21801007,New York Knicks,Indiana Pacers,2019-03-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,22,7,0,0,0,12,3,0.25,5,1,0.2,0,0,0,2,1,3,1,4,-4,Regular Season,TRUE,3,12
+Langston Galloway,204038,21801003,Detroit Pistons,Brooklyn Nets,2019-03-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,27,9,1,0,1,11,3,0.273,7,3,0.429,0,0,0,0,1,1,1,0,-13,Regular Season,TRUE,3,11
+Derrick White,1628401,21800999,San Antonio Spurs,Milwaukee Bucks,2019-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,28,7,4,0,0,10,3,0.3,2,0,0,2,1,0.5,3,0,3,3,2,-9,Regular Season,TRUE,3,10
+Josh Richardson,1626196,21800993,Miami Heat,Toronto Raptors,2019-03-10T15:30:00Z,Regular Season,NA,NA,NA,0,1,26,8,3,0,1,10,3,0.3,3,0,0,2,2,1,1,1,2,1,1,-27,Regular Season,TRUE,3,10
+Thaddeus Young,201152,21800994,Indiana Pacers,Philadelphia 76ers,2019-03-10T15:30:00Z,Regular Season,NA,NA,NA,0,0,37,9,3,0,0,10,3,0.3,1,0,0,4,3,0.75,5,4,9,3,3,-17,Regular Season,TRUE,3,10
+Jae Crowder,203109,21701229,Utah Jazz,Portland Trail Blazers,2018-04-11T22:30:00Z,Regular Season,NA,NA,NA,0,0,27,12,0,1,1,11,4,0.364,5,2,0.4,2,2,1,5,1,6,2,2,-6,Regular Season,TRUE,4,11
+James Johnson,201949,21701221,Miami Heat,Toronto Raptors,2018-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,25,11,4,1,1,11,4,0.364,2,0,0,4,3,0.75,4,2,6,2,2,-4,Regular Season,TRUE,4,11
+Mike Scott,203118,21701222,Washington Wizards,Orlando Magic,2018-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,20,10,2,0,0,11,4,0.364,2,0,0,6,2,0.333,4,1,5,2,0,5,Regular Season,TRUE,4,11
+Marco Belinelli,201158,21701223,Philadelphia 76ers,Milwaukee Bucks,2018-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,19,13,5,0,2,11,4,0.364,9,3,0.333,2,2,1,3,0,3,1,1,24,Regular Season,TRUE,4,11
+Jonathon Simmons,203613,21701012,Orlando Magic,San Antonio Spurs,2018-03-13T20:30:00Z,Regular Season,NA,NA,NA,0,0,23,10,0,0,0,13,3,0.231,5,1,0.2,3,3,1,1,0,1,3,2,-28,Regular Season,TRUE,3,13
+Zach LaVine,203897,21701010,Chicago Bulls,Los Angeles Clippers,2018-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,26,10,2,0,0,13,3,0.231,5,1,0.2,3,3,1,5,1,6,3,2,-13,Regular Season,TRUE,3,13
+Tyler Dorsey,1628416,21700993,Atlanta Hawks,Chicago Bulls,2018-03-11T15:30:00Z,Regular Season,NA,NA,NA,0,1,27,7,3,1,0,11,3,0.273,7,1,0.143,0,0,0,3,0,3,1,0,-11,Regular Season,TRUE,3,11
+Eric Gordon,201569,21700837,Houston Rockets,Dallas Mavericks,2018-02-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,24,6,0,2,0,11,2,0.182,9,2,0.222,0,0,0,2,0,2,2,0,-1,Regular Season,TRUE,2,11
+Domantas Sabonis,1627734,21700836,Indiana Pacers,New York Knicks,2018-02-11T17:00:00Z,Regular Season,NA,NA,NA,1,1,25,6,3,0,0,11,2,0.182,0,0,0,2,2,1,8,2,10,2,1,5,Regular Season,TRUE,2,11
+Khris Middleton,203114,41600121,Milwaukee Bucks,Toronto Raptors,2017-04-15T17:30:00Z,Playoffs,East - First Round,NA,1,1,0,40,10,9,0,1,15,4,0.267,2,0,0,2,2,1,2,0,2,4,0,27,Postseason,TRUE,4,15
+Klay Thompson,202691,21601229,Golden State Warriors,Los Angeles Lakers,2017-04-12T22:30:00Z,Regular Season,NA,NA,NA,1,1,25,12,2,0,2,12,4,0.333,5,1,0.2,4,3,0.75,1,1,2,0,0,11,Regular Season,TRUE,4,12
+Kelly Oubre Jr.,1626162,21601221,Washington Wizards,Miami Heat,2017-04-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,8,1,0,3,12,4,0.333,2,0,0,0,0,0,2,1,3,1,0,0,Regular Season,TRUE,4,12
+Eric Gordon,201569,21601224,Houston Rockets,Minnesota Timberwolves,2017-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,26,11,2,1,0,12,4,0.333,10,3,0.3,0,0,0,2,1,3,3,0,-1,Regular Season,TRUE,4,12
+Norris Cole,202708,21601213,Oklahoma City Thunder,Minnesota Timberwolves,2017-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,23,12,3,0,2,11,4,0.364,3,1,0.333,4,3,0.75,2,0,2,3,0,6,Regular Season,TRUE,4,11
+CJ Miles,101139,21601203,Indiana Pacers,Philadelphia 76ers,2017-04-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,21,9,0,0,0,10,4,0.4,5,1,0.2,0,0,0,4,0,4,1,1,1,Regular Season,TRUE,4,10
+Marcus Morris Sr.,202694,21601008,Detroit Pistons,Utah Jazz,2017-03-15T19:30:00Z,Regular Season,NA,NA,NA,0,1,33,8,2,0,1,15,3,0.2,5,0,0,2,2,1,1,0,1,2,1,-13,Regular Season,TRUE,3,15
+Willie Cauley-Stein,1626161,21600984,Sacramento Kings,Denver Nuggets,2017-03-11T22:30:00Z,Regular Season,NA,NA,NA,0,1,35,13,5,0,0,11,3,0.273,0,0,0,8,7,0.875,5,0,5,0,3,-4,Regular Season,TRUE,3,11
+Marc Gasol,201188,21600981,Memphis Grizzlies,Atlanta Hawks,2017-03-11T21:00:00Z,Regular Season,NA,NA,NA,0,1,27,8,2,0,1,11,3,0.273,3,1,0.333,2,1,0.5,6,0,6,2,3,-11,Regular Season,TRUE,3,11
+Serge Ibaka,201586,21600979,Toronto Raptors,Miami Heat,2017-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,9,0,3,0,11,3,0.273,4,1,0.25,2,2,1,4,0,4,1,2,-16,Regular Season,TRUE,3,11
+Ricky Rubio,201937,21600968,Minnesota Timberwolves,Golden State Warriors,2017-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,35,17,13,0,1,10,3,0.3,1,0,0,11,11,1,3,1,4,3,2,5,Regular Season,TRUE,3,10
+Mario Hezonja,1626209,21600965,Orlando Magic,Charlotte Hornets,2017-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,22,11,0,0,0,10,3,0.3,6,1,0.167,4,4,1,1,3,4,4,1,-24,Regular Season,TRUE,3,10
+Gerald Henderson,201945,21600810,Philadelphia 76ers,Miami Heat,2017-02-11T19:30:00Z,Regular Season,NA,NA,NA,1,1,29,14,1,1,1,11,2,0.182,2,0,0,10,10,1,6,0,6,1,1,4,Regular Season,TRUE,2,11
+Brandon Jennings,201943,21600800,New York Knicks,Denver Nuggets,2017-02-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,39,6,13,0,1,10,2,0.2,6,2,0.333,0,0,0,1,1,2,1,0,-2,Regular Season,TRUE,2,10
+Stephen Curry,201939,41500407,Golden State Warriors,Cleveland Cavaliers,2016-06-19T20:00:00Z,Playoffs,NBA Finals,NA,7,0,1,39,17,2,1,1,19,6,0.316,14,4,0.286,1,1,1,5,0,5,4,4,-3,Postseason,TRUE,6,19
+Ish Smith,202397,21501222,Philadelphia 76ers,Chicago Bulls,2016-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,37,10,8,1,0,13,4,0.308,6,2,0.333,0,0,0,5,0,5,5,3,-17,Regular Season,TRUE,4,13
+Deron Williams,101114,21501223,Dallas Mavericks,San Antonio Spurs,2016-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,36,13,7,0,0,13,4,0.308,7,2,0.286,3,3,1,2,0,2,3,3,-15,Regular Season,TRUE,4,13
+Julius Randle,203944,21501209,Los Angeles Lakers,Oklahoma City Thunder,2016-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,27,9,2,0,1,11,4,0.364,2,1,0.5,0,0,0,12,1,13,1,2,-28,Regular Season,TRUE,4,11
+Jason Smith,201160,21501204,Orlando Magic,Milwaukee Bucks,2016-04-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,29,10,1,4,4,11,4,0.364,1,0,0,2,2,1,5,1,6,1,0,-7,Regular Season,TRUE,4,11
+Robin Lopez,201577,21501202,New York Knicks,Toronto Raptors,2016-04-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,27,10,1,1,0,10,4,0.4,0,0,0,2,2,1,2,3,5,0,1,0,Regular Season,TRUE,4,10
+Will Barton,203115,21501198,Denver Nuggets,Utah Jazz,2016-04-10T17:00:00Z,Regular Season,NA,NA,NA,0,1,34,10,3,2,3,10,4,0.4,4,1,0.25,2,1,0.5,7,0,7,1,3,-7,Regular Season,TRUE,4,10
+Kemba Walker,202689,21500963,Charlotte Hornets,Detroit Pistons,2016-03-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,32,16,8,0,1,11,3,0.273,5,1,0.2,9,9,1,1,0,1,2,3,5,Regular Season,TRUE,3,11
+Iman Shumpert,202697,41400216,Cleveland Cavaliers,Chicago Bulls,2015-05-14T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,6,1,0,36,13,4,1,2,14,5,0.357,4,2,0.5,2,1,0.5,5,2,7,0,0,26,Postseason,TRUE,5,14
+Jeff Green,201145,41400225,Memphis Grizzlies,Golden State Warriors,2015-05-13T22:30:00Z,Playoffs,West - Conf. Semifinals,NA,5,0,0,27,10,1,0,0,13,5,0.385,2,0,0,0,0,0,4,0,4,1,1,-1,Postseason,TRUE,5,13
+Eric Bledsoe,202339,21401216,Phoenix Suns,Los Angeles Clippers,2015-04-14T22:30:00Z,Regular Season,NA,NA,NA,0,1,33,10,9,0,1,14,4,0.286,5,0,0,4,2,0.5,5,1,6,0,2,-9,Regular Season,TRUE,4,14
+P.J. Tucker,200782,21401182,Phoenix Suns,New Orleans Pelicans,2015-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,12,1,0,1,10,4,0.4,4,2,0.5,2,2,1,3,1,4,4,1,-2,Regular Season,TRUE,4,10
+Kyle Korver,2594,21401176,Atlanta Hawks,Charlotte Hornets,2015-04-10T19:30:00Z,Regular Season,NA,NA,NA,1,1,30,16,3,0,1,10,4,0.4,7,3,0.429,6,5,0.833,5,0,5,1,1,17,Regular Season,TRUE,4,10
+Jason Smith,201160,21401180,New York Knicks,Milwaukee Bucks,2015-04-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,27,11,3,1,1,10,4,0.4,0,0,0,4,3,0.75,6,1,7,5,5,-7,Regular Season,TRUE,4,10
+Donatas Motiejunas,202700,21400983,Houston Rockets,Los Angeles Clippers,2015-03-15T15:30:00Z,Regular Season,NA,NA,NA,1,0,43,9,3,1,1,15,3,0.2,2,0,0,5,3,0.6,3,3,6,2,0,5,Regular Season,TRUE,3,15
+Tyler Ennis,203898,21400979,Milwaukee Bucks,Memphis Grizzlies,2015-03-14T20:00:00Z,Regular Season,NA,NA,NA,0,0,36,7,11,0,2,14,3,0.214,5,1,0.2,0,0,0,3,1,4,2,3,-7,Regular Season,TRUE,3,14
+Joe Johnson,2207,21400955,Brooklyn Nets,Miami Heat,2015-03-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,35,12,2,0,0,11,3,0.273,3,0,0,6,6,1,2,1,3,3,5,-6,Regular Season,TRUE,3,11
+Dirk Nowitzki,1717,21400948,Dallas Mavericks,Cleveland Cavaliers,2015-03-10T20:30:00Z,Regular Season,NA,NA,NA,0,1,28,13,1,1,1,10,3,0.3,3,1,0.333,7,6,0.857,2,2,4,4,2,-25,Regular Season,TRUE,3,10
+Deron Williams,101114,21400947,Brooklyn Nets,New Orleans Pelicans,2015-03-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,25,10,4,1,2,10,3,0.3,2,0,0,4,4,1,1,0,1,1,0,-7,Regular Season,TRUE,3,10
+Chandler Parsons,202718,21400797,Dallas Mavericks,Utah Jazz,2015-02-11T20:30:00Z,Regular Season,NA,NA,NA,1,1,33,8,3,0,1,11,2,0.182,6,2,0.333,2,2,1,5,0,5,4,1,3,Regular Season,TRUE,2,11
+Channing Frye,101112,21400557,Orlando Magic,Portland Trail Blazers,2015-01-10T22:00:00Z,Regular Season,NA,NA,NA,0,0,31,3,3,0,2,10,1,0.1,8,1,0.125,0,0,0,8,0,8,1,1,-8,Regular Season,TRUE,1,10
+Kirk Hinrich,2550,21301197,Chicago Bulls,New York Knicks,2014-04-13T19:30:00Z,Regular Season,NA,NA,NA,0,0,32,11,3,0,0,13,4,0.308,6,1,0.167,2,2,1,3,1,4,1,1,-8,Regular Season,TRUE,4,13
+Alexis Ajinca,201582,21301184,New Orleans Pelicans,Oklahoma City Thunder,2014-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,22,12,0,1,0,11,4,0.364,0,0,0,4,4,1,4,2,6,5,2,-14,Regular Season,TRUE,4,11
+Phil Pressey,203515,21301178,Boston Celtics,Charlotte Bobcats,2014-04-11T19:30:00Z,Regular Season,NA,NA,NA,1,1,39,10,13,0,3,11,4,0.364,6,2,0.333,0,0,0,5,0,5,1,4,-2,Regular Season,TRUE,4,11
+Jeff Teague,201952,21300948,Atlanta Hawks,Utah Jazz,2014-03-10T21:00:00Z,Regular Season,NA,NA,NA,1,0,33,14,6,0,0,10,3,0.3,3,1,0.333,9,7,0.778,3,0,3,1,1,13,Regular Season,TRUE,3,10
+Steve Blake,2581,21300776,Los Angeles Lakers,Utah Jazz,2014-02-11T22:30:00Z,Regular Season,NA,NA,NA,0,1,36,5,8,0,2,11,2,0.182,4,1,0.25,0,0,0,3,2,5,2,1,-3,Regular Season,TRUE,2,11
+Jerryd Bayless,201573,21300767,Boston Celtics,Milwaukee Bucks,2014-02-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,23,4,6,0,0,10,2,0.2,3,0,0,0,0,0,1,1,2,2,0,14,Regular Season,TRUE,2,10
+Ricky Rubio,201937,21300768,Minnesota Timberwolves,Houston Rockets,2014-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,29,7,9,1,1,10,2,0.2,4,1,0.25,2,2,1,5,2,7,3,3,-15,Regular Season,TRUE,2,10
+Eric Gordon,201569,21201224,New Orleans Hornets,Dallas Mavericks,2013-04-17T20:00:00Z,Regular Season,NA,NA,NA,0,0,34,16,3,1,4,17,4,0.235,2,0,0,9,8,0.889,3,0,3,3,4,-11,Regular Season,TRUE,4,17
+Chris Paul,101108,21201183,Los Angeles Clippers,New Orleans Hornets,2013-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,37,17,14,1,2,12,4,0.333,2,1,0.5,8,8,1,5,2,7,2,4,-1,Regular Season,TRUE,4,12
+Tony Allen,2754,21201184,Memphis Grizzlies,Houston Rockets,2013-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,24,10,1,0,1,12,4,0.333,1,0,0,8,2,0.25,2,2,4,4,1,-1,Regular Season,TRUE,4,12
+Dwyane Wade,2548,21201180,Miami Heat,Boston Celtics,2013-04-12T19:30:00Z,Regular Season,NA,NA,NA,1,1,34,11,6,1,2,12,4,0.333,0,0,0,6,3,0.5,7,0,7,2,5,8,Regular Season,TRUE,4,12
+Kawhi Leonard,202695,21201172,San Antonio Spurs,Denver Nuggets,2013-04-10T22:30:00Z,Regular Season,NA,NA,NA,0,0,29,8,1,0,3,10,4,0.4,1,0,0,0,0,0,6,5,11,0,1,-3,Regular Season,TRUE,4,10
+DeMarcus Cousins,202326,21201170,Sacramento Kings,New Orleans Hornets,2013-04-10T22:00:00Z,Regular Season,NA,NA,NA,1,1,24,11,5,2,2,10,4,0.4,0,0,0,3,3,1,4,0,4,6,1,12,Regular Season,TRUE,4,10
+JR Smith,2747,21200947,New York Knicks,Golden State Warriors,2013-03-11T22:30:00Z,Regular Season,NA,NA,NA,0,0,21,9,1,0,0,11,3,0.273,3,0,0,4,3,0.75,0,0,0,2,2,-15,Regular Season,TRUE,3,11
+David West,2561,21200764,Indiana Pacers,Brooklyn Nets,2013-02-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,24,7,3,1,1,11,2,0.182,0,0,0,4,3,0.75,5,1,6,2,2,-8,Regular Season,TRUE,2,11
+Russell Westbrook,201566,21100911,Oklahoma City Thunder,Los Angeles Clippers,2012-04-16T22:30:00Z,Regular Season,NA,NA,NA,0,0,32,9,3,0,1,16,4,0.25,5,1,0.2,0,0,0,1,2,3,2,5,-10,Regular Season,TRUE,4,16
+Mickael Pietrus,2554,21100895,Boston Celtics,Charlotte Bobcats,2012-04-15T18:00:00Z,Regular Season,NA,NA,NA,1,0,34,11,0,1,0,15,4,0.267,11,3,0.273,0,0,0,5,1,6,1,0,14,Regular Season,TRUE,4,15
+Terrel Harris,202227,21100879,Miami Heat,Charlotte Bobcats,2012-04-13T19:30:00Z,Regular Season,NA,NA,NA,1,1,35,8,4,0,0,13,4,0.308,5,0,0,0,0,0,4,2,6,1,3,21,Regular Season,TRUE,4,13
+Mike Conley,201144,21100872,Memphis Grizzlies,San Antonio Spurs,2012-04-12T20:30:00Z,Regular Season,NA,NA,NA,0,0,31,11,4,0,1,12,4,0.333,5,1,0.2,2,2,1,5,0,5,4,2,11,Regular Season,TRUE,4,12
+Courtney Lee,201584,21100864,Houston Rockets,Utah Jazz,2012-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,28,9,0,1,2,11,4,0.364,2,0,0,1,1,1,1,1,2,1,0,-13,Regular Season,TRUE,4,11
+Brandan Wright,201148,21100856,Dallas Mavericks,Sacramento Kings,2012-04-10T20:30:00Z,Regular Season,NA,NA,NA,1,1,27,9,1,2,2,10,4,0.4,0,0,0,4,1,0.25,2,2,4,2,2,6,Regular Season,TRUE,4,10
+Jrue Holiday,201950,21100643,Philadelphia 76ers,Miami Heat,2012-03-16T19:00:00Z,Regular Season,NA,NA,NA,0,1,27,7,0,0,0,16,3,0.188,4,1,0.25,0,0,0,1,3,4,1,2,-20,Regular Season,TRUE,3,16
+Chris Paul,101108,21100617,Los Angeles Clippers,Boston Celtics,2012-03-12T22:30:00Z,Regular Season,NA,NA,NA,0,1,40,14,5,0,2,12,3,0.25,5,1,0.2,7,7,1,2,2,4,4,4,-12,Regular Season,TRUE,3,12
+Reggie Williams,202130,21100613,Charlotte Bobcats,New Orleans Hornets,2012-03-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,32,6,4,0,2,12,3,0.25,7,0,0,0,0,0,1,3,4,1,2,2,Regular Season,TRUE,3,12
+Gerald Henderson,201945,21100599,Charlotte Bobcats,Oklahoma City Thunder,2012-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,7,4,0,2,10,3,0.3,0,0,0,2,1,0.5,2,2,4,3,2,-16,Regular Season,TRUE,3,10
+Bismack Biyombo,202687,21100599,Charlotte Bobcats,Oklahoma City Thunder,2012-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,6,0,1,1,10,3,0.3,0,0,0,1,0,0,4,4,8,1,0,-10,Regular Season,TRUE,3,10
+DeMar DeRozan,201942,21100596,Toronto Raptors,Detroit Pistons,2012-03-10T19:30:00Z,Regular Season,NA,NA,NA,0,0,36,15,1,0,0,10,3,0.3,1,0,0,10,9,0.9,5,0,5,2,3,-8,Regular Season,TRUE,3,10
+Jordan Crawford,202348,21100594,Washington Wizards,Portland Trail Blazers,2012-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,28,8,1,0,1,10,3,0.3,2,0,0,4,2,0.5,0,0,0,3,1,-7,Regular Season,TRUE,3,10
+Jordan Crawford,202348,21100410,Washington Wizards,Detroit Pistons,2012-02-12T18:00:00Z,Regular Season,NA,NA,NA,1,0,20,4,4,0,0,12,2,0.167,3,0,0,0,0,0,1,0,1,2,0,5,Regular Season,TRUE,2,12
+Greivis Vasquez,202349,21100397,New Orleans Hornets,Portland Trail Blazers,2012-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,36,6,7,0,5,10,2,0.2,5,0,0,2,2,1,3,0,3,2,2,-8,Regular Season,TRUE,2,10
+Rajon Rondo,200765,21100388,Boston Celtics,Toronto Raptors,2012-02-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,40,5,7,0,0,10,2,0.2,1,0,0,1,1,1,3,2,5,1,5,-16,Regular Season,TRUE,2,10
+LeBron James,2544,41000301,Miami Heat,Chicago Bulls,2011-05-15T20:00:00Z,Playoffs,East - Conf. Finals,NA,1,0,0,41,15,6,3,2,15,5,0.333,3,1,0.333,4,4,1,5,1,6,2,4,-14,Postseason,TRUE,5,15
+Jared Dudley,201162,21001229,Phoenix Suns,San Antonio Spurs,2011-04-13T22:30:00Z,Regular Season,NA,NA,NA,1,1,32,17,2,0,1,13,4,0.308,6,3,0.5,7,6,0.857,4,4,8,3,1,11,Regular Season,TRUE,4,13
+Mustafa Shakur,201203,21001218,Washington Wizards,Cleveland Cavaliers,2011-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,16,8,3,0,2,13,4,0.308,1,0,0,0,0,0,0,2,2,2,2,-5,Regular Season,TRUE,4,13
+Elton Brand,1882,21001220,Philadelphia 76ers,Detroit Pistons,2011-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,32,8,2,2,0,13,4,0.308,0,0,0,0,0,0,6,2,8,2,0,-5,Regular Season,TRUE,4,13
+Drew Gooden,2400,21001225,Milwaukee Bucks,Oklahoma City Thunder,2011-04-13T20:00:00Z,Regular Season,NA,NA,NA,1,0,22,10,0,0,0,13,4,0.308,1,0,0,2,2,1,2,0,2,2,1,-9,Regular Season,TRUE,4,13
+Brandon Bass,101138,21001204,Orlando Magic,Philadelphia 76ers,2011-04-11T19:00:00Z,Regular Season,NA,NA,NA,1,0,31,8,0,1,0,11,4,0.364,0,0,0,0,0,0,7,0,7,2,3,-5,Regular Season,TRUE,4,11
+Metta World Peace,1897,21001201,Los Angeles Lakers,Oklahoma City Thunder,2011-04-10T21:30:00Z,Regular Season,NA,NA,NA,0,1,34,10,3,0,3,10,4,0.4,2,0,0,2,2,1,1,2,3,6,0,-3,Regular Season,TRUE,4,10
+Channing Frye,101112,21000795,Phoenix Suns,Utah Jazz,2011-02-11T22:30:00Z,Regular Season,NA,NA,NA,1,0,26,5,0,1,1,11,2,0.182,7,1,0.143,0,0,0,5,2,7,4,0,-3,Regular Season,TRUE,2,11
+JR Smith,2747,20901216,Denver Nuggets,Phoenix Suns,2010-04-13T22:30:00Z,Regular Season,NA,NA,NA,0,0,20,11,1,0,2,13,4,0.308,8,3,0.375,0,0,0,1,1,2,3,0,-9,Regular Season,TRUE,4,13
+Manu Ginobili,1938,20901192,San Antonio Spurs,Denver Nuggets,2010-04-10T21:00:00Z,Regular Season,NA,NA,NA,1,0,28,15,7,0,2,10,4,0.4,6,2,0.333,6,5,0.833,3,0,3,1,1,26,Regular Season,TRUE,4,10
+Chris Kaman,2549,20900996,Los Angeles Clippers,New Orleans Hornets,2010-03-15T22:30:00Z,Regular Season,NA,NA,NA,0,1,30,8,3,0,0,15,3,0.2,0,0,0,2,2,1,3,0,3,3,0,-14,Regular Season,TRUE,3,15
+Deron Williams,101114,20900973,Utah Jazz,Milwaukee Bucks,2010-03-12T20:30:00Z,Regular Season,NA,NA,NA,0,0,41,11,9,0,0,12,3,0.25,3,0,0,6,5,0.833,5,1,6,2,3,-13,Regular Season,TRUE,3,12
+Danilo Gallinari,201568,20900969,New York Knicks,Memphis Grizzlies,2010-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,33,9,1,1,0,12,3,0.25,8,1,0.125,3,2,0.667,4,0,4,1,2,-10,Regular Season,TRUE,3,12
+Omri Casspi,201956,20900961,Sacramento Kings,Toronto Raptors,2010-03-10T22:00:00Z,Regular Season,NA,NA,NA,1,1,22,8,1,0,1,10,3,0.3,3,0,0,2,2,1,4,2,6,0,1,10,Regular Season,TRUE,3,10
+JR Smith,2747,40800235,Denver Nuggets,Dallas Mavericks,2009-05-13T21:00:00Z,Playoffs,West - Conf. Semifinals,NA,5,1,1,29,18,6,0,0,13,5,0.385,10,4,0.4,4,4,1,4,1,5,4,1,11,Postseason,TRUE,5,13
+Andrei Kirilenko,1905,20801194,Utah Jazz,Golden State Warriors,2009-04-11T21:00:00Z,Regular Season,NA,NA,NA,0,1,22,10,1,1,0,11,4,0.364,1,1,1,2,1,0.5,1,1,2,1,1,-11,Regular Season,TRUE,4,11
+Ronny Turiaf,101142,20801194,Golden State Warriors,Utah Jazz,2009-04-11T21:00:00Z,Regular Season,NA,NA,NA,1,0,28,9,4,5,0,11,4,0.364,1,0,0,2,1,0.5,5,0,5,0,2,10,Regular Season,TRUE,4,11
+Courtney Lee,201584,20801190,Orlando Magic,New Jersey Nets,2009-04-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,42,10,3,0,3,11,4,0.364,4,2,0.5,0,0,0,3,0,3,1,1,-8,Regular Season,TRUE,4,11
+Jamal Crawford,2037,20800978,Golden State Warriors,Dallas Mavericks,2009-03-13T22:30:00Z,Regular Season,NA,NA,NA,1,1,33,9,3,0,0,13,3,0.231,4,1,0.25,2,2,1,4,2,6,4,2,2,Regular Season,TRUE,3,13
+Nenad Krstic,2420,20800953,Oklahoma City Thunder,Sacramento Kings,2009-03-10T22:00:00Z,Regular Season,NA,NA,NA,1,0,32,9,1,3,0,10,3,0.3,0,0,0,3,3,1,9,6,15,2,3,2,Regular Season,TRUE,3,10
+Ime Udoka,2137,20800951,San Antonio Spurs,Charlotte Bobcats,2009-03-10T20:30:00Z,Regular Season,NA,NA,NA,1,1,24,7,1,0,1,10,3,0.3,2,1,0.5,0,0,0,4,1,5,2,0,10,Regular Season,TRUE,3,10
+Jermaine O'Neal,979,20800777,Toronto Raptors,San Antonio Spurs,2009-02-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,38,7,2,6,0,11,2,0.182,0,0,0,4,3,0.75,8,2,10,5,5,3,Regular Season,TRUE,2,11
+Marvin Williams,101107,20800764,Atlanta Hawks,Washington Wizards,2009-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,29,5,0,0,0,10,2,0.2,2,0,0,2,1,0.5,4,1,5,1,0,10,Regular Season,TRUE,2,10
+Al Harrington,1733,20800543,New York Knicks,Houston Rockets,2009-01-10T20:30:00Z,Regular Season,NA,NA,NA,0,0,21,3,1,1,0,10,1,0.1,2,0,0,4,1,0.25,3,2,5,3,2,-1,Regular Season,TRUE,1,10
+Carlos Boozer,2430,40700226,Utah Jazz,Los Angeles Lakers,2008-05-16T22:30:00Z,Playoffs,West - Conf. Semifinals,NA,6,0,1,36,12,2,0,1,16,5,0.313,0,0,0,2,2,1,11,3,14,6,3,-4,Postseason,TRUE,5,16
+Dirk Nowitzki,1717,20701227,Dallas Mavericks,New Orleans Hornets,2008-04-16T19:00:00Z,Regular Season,NA,NA,NA,1,1,39,12,3,0,0,16,4,0.25,6,1,0.167,3,3,1,5,0,5,2,0,9,Regular Season,TRUE,4,16
+Josh Howard,2572,20701202,Dallas Mavericks,Seattle SuperSonics,2008-04-13T21:00:00Z,Regular Season,NA,NA,NA,0,0,28,16,3,0,1,13,4,0.308,3,2,0.667,6,6,1,5,2,7,2,1,-1,Regular Season,TRUE,4,13
+Marko Jaric,2060,20701191,Minnesota Timberwolves,Memphis Grizzlies,2008-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,27,9,1,2,0,12,4,0.333,2,1,0.5,0,0,0,2,0,2,2,2,13,Regular Season,TRUE,4,12
+Nick Collison,2555,20701185,Seattle SuperSonics,San Antonio Spurs,2008-04-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,35,8,1,0,1,11,4,0.364,0,0,0,1,0,0,11,3,14,2,2,-1,Regular Season,TRUE,4,11
+Jeff Green,201145,20701185,Seattle SuperSonics,San Antonio Spurs,2008-04-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,30,10,1,0,1,11,4,0.364,1,0,0,2,2,1,2,0,2,2,3,-18,Regular Season,TRUE,4,11
+Tony Allen,2754,20701180,Boston Celtics,Milwaukee Bucks,2008-04-11T19:30:00Z,Regular Season,NA,NA,NA,1,1,21,10,5,0,0,11,4,0.364,1,0,0,2,2,1,2,2,4,0,1,3,Regular Season,TRUE,4,11
+Daequan Cook,201161,20701006,Miami Heat,Toronto Raptors,2008-03-19T19:00:00Z,Regular Season,NA,NA,NA,0,0,30,8,2,0,2,19,3,0.158,9,2,0.222,0,0,0,2,1,3,3,0,-19,Regular Season,TRUE,3,19
+Mike Miller,2034,20700961,Memphis Grizzlies,Denver Nuggets,2008-03-12T21:00:00Z,Regular Season,NA,NA,NA,0,0,30,12,4,0,0,12,3,0.25,7,1,0.143,5,5,1,9,0,9,2,3,-25,Regular Season,TRUE,3,12
+Mike Bibby,1710,20700952,Atlanta Hawks,Houston Rockets,2008-03-12T19:00:00Z,Regular Season,NA,NA,NA,0,1,41,8,4,0,0,12,3,0.25,4,1,0.25,2,1,0.5,2,0,2,1,2,2,Regular Season,TRUE,3,12
+Devin Harris,2734,20700943,New Jersey Nets,Houston Rockets,2008-03-10T20:30:00Z,Regular Season,NA,NA,NA,0,0,24,10,1,0,1,10,3,0.3,2,0,0,6,4,0.667,1,0,1,2,0,-18,Regular Season,TRUE,3,10
+Devin Brown,2484,20700744,Cleveland Cavaliers,Denver Nuggets,2008-02-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,24,9,3,1,1,10,2,0.2,2,0,0,8,5,0.625,5,0,5,2,1,-15,Regular Season,TRUE,2,10
+Sebastian Telfair,2742,20700748,Minnesota Timberwolves,Toronto Raptors,2008-02-10T18:30:00Z,Regular Season,NA,NA,NA,0,1,34,6,8,0,1,10,2,0.2,1,0,0,2,2,1,2,0,2,4,1,-16,Regular Season,TRUE,2,10
+Monta Ellis,101145,40600224,Golden State Warriors,Utah Jazz,2007-05-13T21:00:00Z,Playoffs,West - Conf. Semifinals,NA,4,0,1,22,15,0,0,2,13,5,0.385,3,1,0.333,4,4,1,0,3,3,2,2,-2,Postseason,TRUE,5,13
+DeShawn Stevenson,2052,20601195,Washington Wizards,Chicago Bulls,2007-04-15T13:00:00Z,Regular Season,NA,NA,NA,0,1,35,13,3,0,0,15,4,0.267,7,2,0.286,4,3,0.75,3,0,3,2,2,-31,Regular Season,TRUE,4,15
+Raja Bell,1952,20601171,Phoenix Suns,Seattle SuperSonics,2007-04-11T22:00:00Z,Regular Season,NA,NA,NA,1,1,34,14,4,1,0,11,4,0.364,7,2,0.286,4,4,1,1,1,2,2,0,20,Regular Season,TRUE,4,11
+Antawn Jamison,1712,20601165,Washington Wizards,Miami Heat,2007-04-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,28,11,0,0,0,11,4,0.364,3,1,0.333,2,2,1,3,2,5,2,0,-12,Regular Season,TRUE,4,11
+Donell Taylor,101182,20601165,Washington Wizards,Miami Heat,2007-04-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,25,8,4,0,3,11,4,0.364,1,0,0,0,0,0,1,2,3,1,2,13,Regular Season,TRUE,4,11
+James Posey,1899,20600939,Miami Heat,Washington Wizards,2007-03-11T18:00:00Z,Regular Season,NA,NA,NA,1,1,31,10,1,0,0,11,3,0.273,4,2,0.5,2,2,1,2,2,4,2,1,-7,Regular Season,TRUE,3,11
+Richard Jefferson,2210,20600931,New Jersey Nets,San Antonio Spurs,2007-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,35,7,0,0,0,10,3,0.3,2,1,0.5,3,0,0,5,1,6,1,2,-14,Regular Season,TRUE,3,10
+Mike Bibby,1710,20600755,Sacramento Kings,Seattle SuperSonics,2007-02-10T22:00:00Z,Regular Season,NA,NA,NA,1,0,25,7,3,0,0,10,2,0.2,3,0,0,3,3,1,3,0,3,1,2,11,Regular Season,TRUE,2,10
+Stephon Marbury,950,20600754,New York Knicks,Utah Jazz,2007-02-10T21:00:00Z,Regular Season,NA,NA,NA,0,0,45,7,6,0,1,10,2,0.2,2,0,0,3,3,1,1,0,1,2,2,-10,Regular Season,TRUE,2,10
+Randy Foye,200751,20600522,Minnesota Timberwolves,Los Angeles Clippers,2007-01-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,27,5,4,0,0,10,1,0.1,3,0,0,4,3,0.75,1,0,1,3,2,1,Regular Season,TRUE,1,10
+Al Harrington,1733,20600518,Indiana Pacers,Boston Celtics,2007-01-10T19:30:00Z,Regular Season,NA,NA,NA,1,0,27,7,1,0,1,10,1,0.1,3,1,0.333,6,4,0.667,2,0,2,3,1,-3,Regular Season,TRUE,1,10
+Eddie Jones,224,20501166,Memphis Grizzlies,Charlotte Bobcats,2006-04-12T19:30:00Z,Regular Season,NA,NA,NA,1,0,38,16,3,2,2,12,4,0.333,6,3,0.5,6,5,0.833,3,0,3,2,0,14,Regular Season,TRUE,4,12
+Malik Allen,2124,20501162,Chicago Bulls,Atlanta Hawks,2006-04-12T19:00:00Z,Regular Season,NA,NA,NA,1,0,26,9,1,0,1,12,4,0.333,0,0,0,2,1,0.5,4,3,7,4,3,2,Regular Season,TRUE,4,12
+Chris Wilcox,2404,20501159,Seattle SuperSonics,San Antonio Spurs,2006-04-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,24,8,0,3,3,11,4,0.364,0,0,0,0,0,0,5,1,6,1,1,-9,Regular Season,TRUE,4,11
+Greg Buckner,1761,20501154,Denver Nuggets,Portland Trail Blazers,2006-04-10T22:00:00Z,Regular Season,NA,NA,NA,1,0,28,9,1,0,5,10,4,0.4,4,1,0.25,0,0,0,5,0,5,2,2,4,Regular Season,TRUE,4,10
+Travis Outlaw,2566,20501154,Portland Trail Blazers,Denver Nuggets,2006-04-10T22:00:00Z,Regular Season,NA,NA,NA,0,1,26,14,1,1,2,10,4,0.4,1,1,1,6,5,0.833,2,5,7,1,0,-15,Regular Season,TRUE,4,10
+Deron Williams,101114,20501153,Utah Jazz,Houston Rockets,2006-04-10T21:00:00Z,Regular Season,NA,NA,NA,1,1,34,11,8,0,0,10,4,0.4,5,2,0.4,2,1,0.5,3,0,3,2,2,-2,Regular Season,TRUE,4,10
+Keyon Dooling,2039,20501150,Orlando Magic,Atlanta Hawks,2006-04-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,20,10,3,0,0,10,4,0.4,1,0,0,2,2,1,0,0,0,2,3,-2,Regular Season,TRUE,4,10
+Juwan Howard,436,20500939,Houston Rockets,New Jersey Nets,2006-03-13T20:30:00Z,Regular Season,NA,NA,NA,0,1,31,9,0,0,0,13,3,0.231,0,0,0,3,3,1,9,4,13,3,2,-9,Regular Season,TRUE,3,13
+Joe Johnson,2207,20500938,Atlanta Hawks,Milwaukee Bucks,2006-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,46,9,17,0,2,13,3,0.231,3,0,0,4,3,0.75,9,0,9,2,4,-1,Regular Season,TRUE,3,13
+Quentin Richardson,2047,20500922,New York Knicks,Charlotte Bobcats,2006-03-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,28,8,4,0,0,11,3,0.273,7,2,0.286,0,0,0,7,2,9,4,3,-9,Regular Season,TRUE,3,11
+Tayshaun Prince,2419,20500745,Detroit Pistons,Miami Heat,2006-02-12T15:30:00Z,Regular Season,NA,NA,NA,0,0,40,5,3,0,0,12,2,0.167,2,1,0.5,0,0,0,8,2,10,0,0,2,Regular Season,TRUE,2,12
+Rasual Butler,2446,20500731,Oklahoma City Hornets,New York Knicks,2006-02-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,26,9,1,0,1,10,2,0.2,4,0,0,6,5,0.833,3,2,5,2,0,-1,Regular Season,TRUE,2,10
+Jumaine Jones,1908,20500729,Charlotte Bobcats,Toronto Raptors,2006-02-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,30,6,1,0,1,10,2,0.2,6,2,0.333,0,0,0,4,0,4,2,0,-33,Regular Season,TRUE,2,10
+Kareem Rush,2416,20500729,Charlotte Bobcats,Toronto Raptors,2006-02-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,27,7,4,0,2,10,2,0.2,1,0,0,4,3,0.75,2,1,3,5,6,-18,Regular Season,TRUE,2,10
+Eddie Jones,224,40400204,Miami Heat,Washington Wizards,2005-05-14T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,4,1,0,40,13,2,1,3,14,5,0.357,8,2,0.25,3,1,0.333,5,0,5,3,2,0,Postseason,TRUE,5,14
+Tayshaun Prince,2419,20401150,Detroit Pistons,Chicago Bulls,2005-04-11T20:30:00Z,Regular Season,NA,NA,NA,1,0,45,11,3,2,1,11,4,0.364,3,2,0.667,2,1,0.5,6,0,6,2,2,1,Regular Season,TRUE,4,11
+Stephen Jackson,1536,20401146,Indiana Pacers,Toronto Raptors,2005-04-11T19:00:00Z,Regular Season,NA,NA,NA,1,0,36,9,0,0,0,11,4,0.364,1,0,0,2,1,0.5,3,1,4,2,5,0,Regular Season,TRUE,4,11
+Kirk Hinrich,2550,20400940,Chicago Bulls,Seattle SuperSonics,2005-03-15T20:30:00Z,Regular Season,NA,NA,NA,0,1,34,7,5,0,0,15,3,0.2,4,1,0.25,0,0,0,3,1,4,4,1,-25,Regular Season,TRUE,3,15
+Latrell Sprewell,84,20400902,Minnesota Timberwolves,Miami Heat,2005-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,28,7,2,0,0,10,3,0.3,0,0,0,1,1,1,0,2,2,3,3,-9,Regular Season,TRUE,3,10
+Tayshaun Prince,2419,40300405,Detroit Pistons,Los Angeles Lakers,2004-06-15T21:00:00Z,Playoffs,NBA Finals,NA,5,1,1,38,17,2,0,1,15,6,0.4,2,0,0,8,5,0.625,7,3,10,2,1,16,Postseason,TRUE,6,15
+Peja Stojakovic,978,40300225,Sacramento Kings,Minnesota Timberwolves,2004-05-14T21:30:00Z,Playoffs,West - Conf. Semifinals,NA,5,0,0,44,12,1,0,2,14,5,0.357,3,0,0,2,2,1,2,0,2,4,3,-16,Postseason,TRUE,5,14
+Clifford Robinson,361,20301189,Golden State Warriors,Sacramento Kings,2004-04-14T22:30:00Z,Regular Season,NA,NA,NA,1,1,45,10,4,2,0,14,4,0.286,4,2,0.5,1,0,0,3,5,8,3,1,7,Regular Season,TRUE,4,14
+Jarvis Hayes,2553,20301165,Washington Wizards,Detroit Pistons,2004-04-12T19:30:00Z,Regular Season,NA,NA,NA,0,0,30,9,0,0,2,12,4,0.333,2,0,0,2,1,0.5,1,0,1,4,4,-22,Regular Season,TRUE,4,12
+Desmond Mason,2046,20301152,Milwaukee Bucks,New Orleans Hornets,2004-04-10T20:30:00Z,Regular Season,NA,NA,NA,0,1,36,10,3,1,0,10,4,0.4,0,0,0,2,2,1,3,2,5,1,1,4,Regular Season,TRUE,4,10
+Steve Francis,1883,20300964,Houston Rockets,Phoenix Suns,2004-03-15T19:30:00Z,Regular Season,NA,NA,NA,0,1,48,12,5,1,2,15,3,0.2,3,1,0.333,6,5,0.833,4,1,5,4,5,3,Regular Season,TRUE,3,15
+David Wesley,133,20300936,New Orleans Hornets,Houston Rockets,2004-03-11T19:30:00Z,Regular Season,NA,NA,NA,0,0,39,8,5,0,0,11,3,0.273,6,2,0.333,0,0,0,1,0,1,3,1,-1,Regular Season,TRUE,3,11
+David Wesley,133,20300931,New Orleans Hornets,Miami Heat,2004-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,34,19,2,0,0,10,3,0.3,6,2,0.333,11,11,1,2,0,2,4,1,6,Regular Season,TRUE,3,10
+DeShawn Stevenson,2052,20300927,Orlando Magic,Washington Wizards,2004-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,39,8,2,0,2,10,3,0.3,0,0,0,2,2,1,4,1,5,2,3,-4,Regular Season,TRUE,3,10
+Rod Strickland,393,20300928,Toronto Raptors,Cleveland Cavaliers,2004-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,28,8,6,2,0,10,3,0.3,0,0,0,2,2,1,3,0,3,0,2,-7,Regular Season,TRUE,3,10
+Tony Battie,1499,20300928,Cleveland Cavaliers,Toronto Raptors,2004-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,26,8,1,0,0,10,3,0.3,1,0,0,2,2,1,5,2,7,0,1,7,Regular Season,TRUE,3,10
+Eddie House,2067,20300744,Los Angeles Clippers,Minnesota Timberwolves,2004-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,5,2,0,0,10,2,0.2,4,1,0.25,0,0,0,5,0,5,0,1,3,Regular Season,TRUE,2,10
+Richard Jefferson,2210,40200406,New Jersey Nets,San Antonio Spurs,2003-06-15T20:30:00Z,Playoffs,NBA Finals,NA,6,0,0,41,13,2,0,0,15,6,0.4,1,0,0,1,1,1,5,2,7,5,3,-1,Postseason,TRUE,6,15
+Jason Kidd,467,20201165,New Jersey Nets,New Orleans Hornets,2003-04-14T19:30:00Z,Regular Season,NA,NA,NA,0,1,44,14,6,1,1,14,4,0.286,6,1,0.167,6,5,0.833,5,0,5,4,1,-9,Regular Season,TRUE,4,14
+Rasual Butler,2446,20201162,Miami Heat,Boston Celtics,2003-04-13T18:00:00Z,Regular Season,NA,NA,NA,0,1,24,10,2,1,0,13,4,0.308,4,0,0,3,2,0.667,1,0,1,4,0,-2,Regular Season,TRUE,4,13
+Gary Payton,56,20201157,Milwaukee Bucks,Indiana Pacers,2003-04-13T15:00:00Z,Regular Season,NA,NA,NA,1,1,35,12,8,0,3,13,4,0.308,3,0,0,4,4,1,3,1,4,5,1,16,Regular Season,TRUE,4,13
+Theo Ratliff,689,20201150,Atlanta Hawks,Washington Wizards,2003-04-12T19:00:00Z,Regular Season,NA,NA,NA,1,0,35,9,2,7,0,12,4,0.333,0,0,0,2,1,0.5,7,1,8,2,2,-5,Regular Season,TRUE,4,12
+Walter McCarty,962,20201151,Boston Celtics,Orlando Magic,2003-04-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,33,10,0,1,1,12,4,0.333,8,2,0.25,0,0,0,4,1,5,3,1,7,Regular Season,TRUE,4,12
+Gordan Giricek,1921,20201151,Orlando Magic,Boston Celtics,2003-04-12T19:00:00Z,Regular Season,NA,NA,NA,1,1,43,16,3,0,0,12,4,0.333,8,3,0.375,6,5,0.833,6,0,6,4,4,-2,Regular Season,TRUE,4,12
+Devin Brown,2484,20201149,Denver Nuggets,Sacramento Kings,2003-04-11T22:30:00Z,Regular Season,NA,NA,NA,0,0,23,8,3,0,0,11,4,0.364,0,0,0,0,0,0,2,0,2,3,1,-4,Regular Season,TRUE,4,11
+Andre Miller,1889,20201142,Los Angeles Clippers,Minnesota Timberwolves,2003-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,24,8,7,0,0,11,4,0.364,0,0,0,0,0,0,4,0,4,1,0,-6,Regular Season,TRUE,4,11
+Ira Newble,1956,20201138,Atlanta Hawks,Cleveland Cavaliers,2003-04-11T19:30:00Z,Regular Season,NA,NA,NA,1,1,40,10,2,0,0,11,4,0.364,1,0,0,3,2,0.667,1,3,4,5,0,13,Regular Season,TRUE,4,11
+Greg Buckner,1761,20201135,Philadelphia 76ers,Boston Celtics,2003-04-10T19:30:00Z,Regular Season,NA,NA,NA,1,0,29,9,1,0,2,10,4,0.4,2,1,0.5,0,0,0,5,1,6,3,1,1,Regular Season,TRUE,4,10
+Gary Payton,56,20200946,Milwaukee Bucks,Los Angeles Lakers,2003-03-15T20:30:00Z,Regular Season,NA,NA,NA,0,1,39,6,8,1,3,15,3,0.2,3,0,0,0,0,0,3,0,3,2,4,-13,Regular Season,TRUE,3,15
+Richard Hamilton,1888,20200945,Detroit Pistons,Boston Celtics,2003-03-15T19:30:00Z,Regular Season,NA,NA,NA,0,1,25,8,4,0,0,15,3,0.2,4,1,0.25,2,1,0.5,3,1,4,3,4,-11,Regular Season,TRUE,3,15
+Corliss Williamson,722,20200937,Detroit Pistons,Washington Wizards,2003-03-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,26,11,2,1,0,14,3,0.214,0,0,0,6,5,0.833,2,7,9,5,3,0,Regular Season,TRUE,3,14
+Bobby Jackson,1517,20200931,Sacramento Kings,Phoenix Suns,2003-03-13T22:00:00Z,Regular Season,NA,NA,NA,0,0,24,9,1,0,0,13,3,0.231,5,1,0.2,2,2,1,3,1,4,1,1,-33,Regular Season,TRUE,3,13
+Shaquille O'Neal,406,20200917,Los Angeles Lakers,Chicago Bulls,2003-03-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,36,13,2,3,2,11,3,0.273,0,0,0,10,7,0.7,7,3,10,3,0,-7,Regular Season,TRUE,3,11
+Reggie Miller,397,20200914,Indiana Pacers,New Orleans Hornets,2003-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,34,8,3,0,1,11,3,0.273,4,1,0.25,1,1,1,4,1,5,1,1,-4,Regular Season,TRUE,3,11
+Gilbert Arenas,2240,20200732,Golden State Warriors,Toronto Raptors,2003-02-14T19:00:00Z,Regular Season,NA,NA,NA,1,0,36,15,7,0,6,14,2,0.143,4,0,0,12,11,0.917,7,2,9,5,5,9,Regular Season,TRUE,2,14
+Mike Wilks,2366,20200508,Atlanta Hawks,Houston Rockets,2003-01-10T19:30:00Z,Regular Season,NA,NA,NA,1,1,26,3,1,0,1,10,1,0.1,1,0,0,4,1,0.25,1,0,1,5,1,-7,Regular Season,TRUE,1,10
+Jarron Collins,2260,20101153,Utah Jazz,Golden State Warriors,2002-04-13T22:30:00Z,Regular Season,NA,NA,NA,1,0,19,10,0,1,1,13,4,0.308,0,0,0,3,2,0.667,4,2,6,2,0,5,Regular Season,TRUE,4,13
+Eddie Griffin,2204,20101144,Houston Rockets,Portland Trail Blazers,2002-04-12T20:30:00Z,Regular Season,NA,NA,NA,0,1,27,10,1,3,0,12,4,0.333,5,1,0.2,2,1,0.5,4,2,6,0,0,-5,Regular Season,TRUE,4,12
+Alvin Williams,1541,20101128,Toronto Raptors,Indiana Pacers,2002-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,31,9,6,0,1,10,4,0.4,4,1,0.25,1,0,0,1,1,2,4,4,-6,Regular Season,TRUE,4,10
+Greg Anthony,21,20101126,Milwaukee Bucks,Cleveland Cavaliers,2002-04-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,27,10,3,0,2,10,4,0.4,5,2,0.4,0,0,0,2,0,2,1,2,-20,Regular Season,TRUE,4,10
+Sam Cassell,208,20101126,Milwaukee Bucks,Cleveland Cavaliers,2002-04-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,18,10,5,2,1,10,4,0.4,0,0,0,2,2,1,2,0,2,1,2,-15,Regular Season,TRUE,4,10
+Kenny Anderson,72,20100915,Boston Celtics,New Jersey Nets,2002-03-13T19:00:00Z,Regular Season,NA,NA,NA,1,1,35,7,10,0,4,13,3,0.231,1,0,0,2,1,0.5,3,1,4,3,0,14,Regular Season,TRUE,3,13
+Vlade Divac,124,20100904,Sacramento Kings,Chicago Bulls,2002-03-11T20:30:00Z,Regular Season,NA,NA,NA,1,0,37,14,3,1,1,11,3,0.273,0,0,0,12,8,0.667,8,6,14,4,3,0,Regular Season,TRUE,3,11
+Robert Horry,109,20100898,Los Angeles Lakers,New York Knicks,2002-03-10T18:00:00Z,Regular Season,NA,NA,NA,1,1,35,8,2,3,4,10,3,0.3,5,2,0.4,0,0,0,12,1,13,4,0,4,Regular Season,TRUE,3,10
+Scottie Pippen,937,20100495,Portland Trail Blazers,Miami Heat,2002-01-10T19:30:00Z,Regular Season,NA,NA,NA,1,0,41,3,4,0,4,10,1,0.1,3,0,0,3,1,0.333,6,0,6,5,2,1,Regular Season,TRUE,1,10
+Joe Smith,693,20001158,Detroit Pistons,Charlotte Hornets,2001-04-15T20:00:00Z,Regular Season,NA,NA,NA,0,1,34,11,2,1,0,15,4,0.267,0,0,0,4,3,0.75,5,5,10,2,1,-1,Regular Season,TRUE,4,15
+Robert Pack,123,20001151,Denver Nuggets,San Antonio Spurs,2001-04-14T20:30:00Z,Regular Season,NA,NA,NA,0,0,25,11,5,0,2,14,4,0.286,1,0,0,3,3,1,2,0,2,0,3,-14,Regular Season,TRUE,4,14
+Sean Rooks,399,20001122,Los Angeles Clippers,Sacramento Kings,2001-04-10T22:30:00Z,Regular Season,NA,NA,NA,0,0,23,8,1,1,0,10,4,0.4,0,0,0,0,0,0,3,2,5,3,0,10,Regular Season,TRUE,4,10
+Terrell Brandon,210,20001124,Minnesota Timberwolves,Vancouver Grizzlies,2001-04-10T22:00:00Z,Regular Season,NA,NA,NA,1,0,27,9,10,0,3,10,4,0.4,2,0,0,1,1,1,5,0,5,0,1,25,Regular Season,TRUE,4,10
+Tim Hardaway,896,20001116,Miami Heat,Philadelphia 76ers,2001-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,38,11,5,0,1,10,4,0.4,5,1,0.2,2,2,1,0,0,0,2,3,-6,Regular Season,TRUE,4,10
+Lamond Murray,441,20001117,Cleveland Cavaliers,Orlando Magic,2001-04-10T19:30:00Z,Regular Season,NA,NA,NA,1,1,30,19,5,2,3,10,4,0.4,4,2,0.5,9,9,1,1,3,4,2,3,28,Regular Season,TRUE,4,10
+John Stockton,304,20000912,Utah Jazz,Sacramento Kings,2001-03-11T17:30:00Z,Regular Season,NA,NA,NA,0,0,30,7,9,0,3,11,3,0.273,3,0,0,1,1,1,1,2,3,1,3,-18,Regular Season,TRUE,3,11
+Bob Sura,682,20000904,Golden State Warriors,Houston Rockets,2001-03-10T20:30:00Z,Regular Season,NA,NA,NA,0,0,37,8,3,0,1,10,3,0.3,4,1,0.25,1,1,1,3,1,4,3,3,-6,Regular Season,TRUE,3,10
+Kenny Thomas,1903,20000904,Houston Rockets,Golden State Warriors,2001-03-10T20:30:00Z,Regular Season,NA,NA,NA,1,1,30,7,1,0,2,10,3,0.3,1,0,0,2,1,0.5,4,1,5,3,0,11,Regular Season,TRUE,3,10
+Latrell Sprewell,84,20000507,New York Knicks,Houston Rockets,2001-01-11T19:30:00Z,Regular Season,NA,NA,NA,0,1,39,5,4,0,1,11,1,0.091,0,0,0,4,3,0.75,9,2,11,1,6,0,Regular Season,TRUE,1,11
+Alonzo Mourning,297,49900045,Miami Heat,New York Knicks,2000-05-17T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,5,1,1,38,18,1,4,0,17,5,0.294,0,0,0,11,8,0.727,5,0,5,6,2,0,Postseason,TRUE,5,17
+John Amaechi,680,29901136,Orlando Magic,New Jersey Nets,2000-04-14T19:30:00Z,Regular Season,NA,NA,NA,1,0,26,12,1,1,0,14,4,0.286,0,0,0,4,4,1,2,0,2,2,2,14,Regular Season,TRUE,4,14
+Hersey Hawkins,765,29901131,Chicago Bulls,Washington Wizards,2000-04-13T20:30:00Z,Regular Season,NA,NA,NA,0,1,36,8,2,0,4,13,4,0.308,3,0,0,0,0,0,1,0,1,2,2,-8,Regular Season,TRUE,4,13
+Lamar Odom,1885,29901128,Los Angeles Clippers,Utah Jazz,2000-04-12T21:00:00Z,Regular Season,NA,NA,NA,0,0,37,8,8,1,2,12,4,0.333,2,0,0,0,0,0,4,3,7,6,6,-6,Regular Season,TRUE,4,12
+Reggie Miller,397,29901127,Indiana Pacers,Toronto Raptors,2000-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,35,12,1,1,1,12,4,0.333,6,2,0.333,2,2,1,4,0,4,4,1,9,Regular Season,TRUE,4,12
+Shandon Anderson,1000,29901117,Houston Rockets,Denver Nuggets,2000-04-11T21:00:00Z,Regular Season,NA,NA,NA,1,0,40,13,2,0,1,11,4,0.364,3,0,0,8,5,0.625,9,0,9,2,3,8,Regular Season,TRUE,4,11
+Damon Stoudamire,757,29901116,Portland Trail Blazers,Dallas Mavericks,2000-04-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,25,11,2,0,0,11,4,0.364,4,3,0.75,0,0,0,1,1,2,3,3,-12,Regular Season,TRUE,4,11
+Lamar Odom,1885,29900887,Los Angeles Clippers,Charlotte Hornets,2000-03-10T22:30:00Z,Regular Season,NA,NA,NA,0,1,35,10,11,1,1,10,3,0.3,2,1,0.5,6,3,0.5,8,2,10,3,2,-10,Regular Season,TRUE,3,10
+Doug Christie,57,29900888,Toronto Raptors,Sacramento Kings,2000-03-10T22:30:00Z,Regular Season,NA,NA,NA,0,0,28,9,4,0,1,10,3,0.3,2,1,0.5,2,2,1,2,1,3,2,2,-9,Regular Season,TRUE,3,10
+Theo Ratliff,689,29900880,Philadelphia 76ers,New York Knicks,2000-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,40,6,1,4,0,10,3,0.3,0,0,0,1,0,0,4,0,4,5,1,-10,Regular Season,TRUE,3,10
+Tim Duncan,1495,49800031,San Antonio Spurs,Minnesota Timberwolves,1999-05-15T15:00:00Z,Playoffs,West - First Round,NA,4,1,0,38,16,0,3,0,15,5,0.333,0,0,0,9,6,0.667,5,3,8,4,1,-3,Postseason,TRUE,5,15
+Tim Hardaway,896,49800025,Miami Heat,New York Knicks,1999-05-14T20:00:00Z,Playoffs,East - First Round,NA,4,1,0,35,14,5,0,1,14,5,0.357,8,4,0.5,0,0,0,2,0,2,2,2,13,Postseason,TRUE,5,14
+Glen Rice,779,49800024,Los Angeles Lakers,Houston Rockets,1999-05-13T21:30:00Z,Playoffs,West - First Round,NA,3,0,0,42,13,1,0,0,13,5,0.385,6,1,0.167,2,2,1,1,0,1,1,4,-13,Postseason,TRUE,5,13
+Reggie Miller,397,29800547,Indiana Pacers,Orlando Magic,1999-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,36,21,2,0,2,14,4,0.286,5,1,0.2,12,12,1,3,0,3,3,3,6,Regular Season,TRUE,4,14
+Chucky Brown,359,29800530,Charlotte Hornets,Detroit Pistons,1999-04-12T19:30:00Z,Regular Season,NA,NA,NA,1,0,31,14,0,0,2,12,4,0.333,0,0,0,6,6,1,4,0,4,3,1,1,Regular Season,TRUE,4,12
+Jerry Stackhouse,711,29800530,Detroit Pistons,Charlotte Hornets,1999-04-12T19:30:00Z,Regular Season,NA,NA,NA,0,1,21,14,3,0,1,12,4,0.333,3,0,0,6,6,1,3,0,3,1,2,-12,Regular Season,TRUE,4,12
+Kornel David,1600,29800514,Chicago Bulls,Miami Heat,1999-04-10T20:30:00Z,Regular Season,NA,NA,NA,0,1,35,13,0,1,1,10,4,0.4,0,0,0,6,5,0.833,5,5,10,2,2,-15,Regular Season,TRUE,4,10
+Erick Dampier,956,29800281,Golden State Warriors,Los Angeles Lakers,1999-03-12T22:30:00Z,Regular Season,NA,NA,NA,0,0,25,12,2,1,0,12,3,0.25,0,0,0,8,6,0.75,4,5,9,2,0,-21,Regular Season,TRUE,3,12
+Latrell Sprewell,84,29800266,New York Knicks,Washington Wizards,1999-03-11T19:30:00Z,Regular Season,NA,NA,NA,1,1,30,11,5,0,0,11,3,0.273,1,0,0,6,5,0.833,1,3,4,2,1,4,Regular Season,TRUE,3,11
+Lucious Harris,446,29800045,New Jersey Nets,Orlando Magic,1999-02-10T19:30:00Z,Regular Season,NA,NA,NA,0,1,22,6,2,1,0,10,2,0.2,2,0,0,2,2,1,2,1,3,3,4,-14,Regular Season,TRUE,2,10
+Ike Austin,1134,29800045,Orlando Magic,New Jersey Nets,1999-02-10T19:30:00Z,Regular Season,NA,NA,NA,1,0,30,7,2,1,1,10,2,0.2,0,0,0,4,3,0.75,3,3,6,1,1,5,Regular Season,TRUE,2,10
+Allen Iverson,947,29701164,Philadelphia 76ers,Chicago Bulls,1998-04-17T19:30:00Z,Regular Season,NA,NA,NA,0,1,40,18,6,3,1,17,4,0.235,3,1,0.333,12,9,0.75,3,3,6,2,7,-18,Regular Season,TRUE,4,17
+Kevin Ollie,1563,29701123,Orlando Magic,Chicago Bulls,1998-04-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,28,10,5,0,0,11,4,0.364,0,0,0,3,2,0.667,4,0,4,0,3,10,Regular Season,TRUE,4,11
+Shawn Respert,704,29701126,Dallas Mavericks,Denver Nuggets,1998-04-11T20:30:00Z,Regular Season,NA,NA,NA,1,1,20,9,1,0,0,11,4,0.364,4,1,0.25,0,0,0,2,0,2,0,0,9,Regular Season,TRUE,4,11
+Greg Foster,323,29701119,Utah Jazz,Los Angeles Clippers,1998-04-10T21:00:00Z,Regular Season,NA,NA,NA,1,1,38,13,2,1,0,10,4,0.4,0,0,0,6,5,0.833,5,5,10,3,4,15,Regular Season,TRUE,4,10
+Dean Garrett,1051,29700902,Denver Nuggets,Vancouver Grizzlies,1998-03-12T21:00:00Z,Regular Season,NA,NA,NA,1,1,30,8,1,3,0,12,3,0.25,0,0,0,2,2,1,3,5,8,5,0,13,Regular Season,TRUE,3,12
+Kendall Gill,383,29700900,New Jersey Nets,Houston Rockets,1998-03-12T20:30:00Z,Regular Season,NA,NA,NA,0,0,25,9,3,1,0,12,3,0.25,0,0,0,4,3,0.75,0,1,1,3,0,0,Regular Season,TRUE,3,12
+Detlef Schrempf,96,29700889,Seattle SuperSonics,Toronto Raptors,1998-03-10T22:00:00Z,Regular Season,NA,NA,NA,1,1,33,11,3,0,1,10,3,0.3,1,0,0,6,5,0.833,6,2,8,2,4,20,Regular Season,TRUE,3,10
+Calbert Cheaney,384,29700885,Washington Wizards,Milwaukee Bucks,1998-03-10T20:30:00Z,Regular Season,NA,NA,NA,1,0,22,9,2,0,1,10,3,0.3,0,0,0,4,3,0.75,2,1,3,3,2,15,Regular Season,TRUE,3,10
+Nick Van Exel,89,29700693,Los Angeles Lakers,Portland Trail Blazers,1998-02-10T22:00:00Z,Regular Season,NA,NA,NA,0,0,24,9,2,0,1,10,2,0.2,3,1,0.333,4,4,1,1,2,3,0,2,-21,Regular Season,TRUE,2,10
+Jon Barry,468,29700693,Los Angeles Lakers,Portland Trail Blazers,1998-02-10T22:00:00Z,Regular Season,NA,NA,NA,0,0,33,5,6,0,1,10,2,0.2,8,1,0.125,0,0,0,0,1,1,4,0,3,Regular Season,TRUE,2,10
+Damon Stoudamire,757,29601147,Toronto Raptors,Milwaukee Bucks,1997-04-15T20:30:00Z,Regular Season,NA,NA,NA,0,0,39,11,11,0,4,15,4,0.267,4,1,0.25,2,2,1,3,1,4,3,4,-7,Regular Season,TRUE,4,15
+Joe Smith,693,29601144,Golden State Warriors,Denver Nuggets,1997-04-14T21:00:00Z,Regular Season,NA,NA,NA,1,0,27,12,1,0,0,14,4,0.286,0,0,0,4,4,1,4,1,5,5,1,8,Regular Season,TRUE,4,14
+Donyell Marshall,923,29601136,Golden State Warriors,Phoenix Suns,1997-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,23,13,1,1,1,13,4,0.308,3,0,0,6,5,0.833,3,5,8,0,3,-6,Regular Season,TRUE,4,13
+Lindsey Hunter,283,29601117,Detroit Pistons,Charlotte Hornets,1997-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,36,9,0,0,1,11,4,0.364,4,1,0.25,0,0,0,1,0,1,3,0,-8,Regular Season,TRUE,4,11
+Matt Geiger,761,29601117,Charlotte Hornets,Detroit Pistons,1997-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,25,9,1,0,1,11,4,0.364,0,0,0,2,1,0.5,7,4,11,4,1,18,Regular Season,TRUE,4,11
+Andrew DeClercq,692,29601113,Golden State Warriors,Denver Nuggets,1997-04-10T22:30:00Z,Regular Season,NA,NA,NA,1,1,26,10,2,2,0,10,4,0.4,0,0,0,4,2,0.5,9,6,15,3,2,11,Regular Season,TRUE,4,10
+Allan Houston,275,29600893,New York Knicks,Dallas Mavericks,1997-03-11T20:30:00Z,Regular Season,NA,NA,NA,0,0,27,8,2,0,0,11,3,0.273,5,1,0.2,1,1,1,3,0,3,3,4,-4,Regular Season,TRUE,3,11
+John Starks,317,29600701,New York Knicks,Philadelphia 76ers,1997-02-13T19:30:00Z,Regular Season,NA,NA,NA,1,1,19,5,4,0,2,13,2,0.154,7,1,0.143,4,0,0,2,1,3,1,2,0,Regular Season,TRUE,2,13
+Harvey Grant,265,29600682,Washington Bullets,New York Knicks,1997-02-11T19:30:00Z,Regular Season,NA,NA,NA,0,1,29,4,0,0,1,11,2,0.182,1,0,0,0,0,0,2,5,7,4,1,-9,Regular Season,TRUE,2,11
+Mookie Blaylock,302,49500050,Atlanta Hawks,Orlando Magic,1996-05-15T20:00:00Z,Playoffs,NA,NA,5,0,0,43,14,7,1,1,15,5,0.333,9,3,0.333,4,1,0.25,2,2,4,0,3,0,Postseason,TRUE,5,15
+Armen Gilliam,288,29501138,New Jersey Nets,Miami Heat,1996-04-15T20:00:00Z,Regular Season,NA,NA,NA,0,0,35,12,0,2,1,15,4,0.267,0,0,0,7,4,0.57,6,1,7,2,2,0,Regular Season,TRUE,4,15
+David Benoit,128,29501130,Utah Jazz,Golden State Warriors,1996-04-14T20:00:00Z,Regular Season,NA,NA,NA,0,0,24,8,0,0,3,14,4,0.285,2,0,0,0,0,0,2,4,6,1,3,0,Regular Season,TRUE,4,14
+Eddie Jones,224,29501114,Los Angeles Lakers,Golden State Warriors,1996-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,32,9,8,3,3,12,4,0.333,4,1,0.25,0,0,0,3,1,4,0,3,0,Regular Season,TRUE,4,12
+John Starks,317,29501109,New York Knicks,Cleveland Cavaliers,1996-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,34,14,8,0,1,11,4,0.363,5,3,0.599,3,3,1,1,1,2,5,1,0,Regular Season,TRUE,4,11
+Lawrence Moten,734,29501102,Vancouver Grizzlies,San Antonio Spurs,1996-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,14,2,0,2,10,4,0.4,3,0,0,7,6,0.856,0,2,2,2,1,0,Regular Season,TRUE,4,10
+Grant Hill,255,29501104,Detroit Pistons,Philadelphia 76ers,1996-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,35,11,9,2,0,10,4,0.4,0,0,0,4,3,0.75,9,2,11,2,5,0,Regular Season,TRUE,4,10
+Nick Van Exel,89,29500886,Los Angeles Lakers,Portland Trail Blazers,1996-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,1,32,8,8,0,0,12,3,0.25,5,0,0,3,2,0.667,2,0,2,2,2,0,Regular Season,TRUE,3,12
+Tony Dumas,434,29500891,Dallas Mavericks,Miami Heat,1996-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,1,31,8,2,0,3,12,3,0.25,5,2,0.4,2,0,0,4,1,5,1,0,0,Regular Season,TRUE,3,12
+Eldridge Recasner,695,29500872,Houston Rockets,Vancouver Grizzlies,1996-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,25,9,3,0,1,10,3,0.299,1,0,0,4,3,0.75,1,1,2,2,1,0,Regular Season,TRUE,3,10
+Hubert Davis,93,29500878,New York Knicks,Chicago Bulls,1996-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,25,11,2,1,1,10,3,0.299,5,2,0.4,3,3,1,0,0,0,2,2,0,Regular Season,TRUE,3,10
+Billy Owens,182,29500882,Sacramento Kings,Golden State Warriors,1996-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,35,11,6,0,1,10,3,0.299,3,1,0.333,4,4,1,3,0,3,2,5,0,Regular Season,TRUE,3,10
+Mario Elie,53,49400049,Houston Rockets,Phoenix Suns,1995-05-16T20:00:00Z,Playoffs,NA,NA,5,1,0,40,15,1,1,1,16,5,0.313,7,0,0,5,5,1,1,2,3,4,2,0,Postseason,TRUE,5,16
+Charles Barkley,787,29401035,Phoenix Suns,Denver Nuggets,1995-04-14T20:00:00Z,Regular Season,NA,NA,NA,0,0,36,16,2,0,3,14,4,0.285,4,1,0.25,10,7,0.699,3,3,6,4,3,0,Regular Season,TRUE,4,14
+Larry Johnson,913,29401039,Charlotte Hornets,Detroit Pistons,1995-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,0,43,15,4,0,2,14,4,0.285,5,2,0.4,8,5,0.625,9,0,9,1,2,0,Regular Season,TRUE,4,14
+Dan Majerle,105,29401012,Phoenix Suns,Seattle SuperSonics,1995-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,34,12,3,0,1,11,4,0.363,9,4,0.444,0,0,0,3,0,3,3,1,0,Regular Season,TRUE,4,11
+Popeye Jones,461,29401018,Dallas Mavericks,Houston Rockets,1995-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,37,11,2,0,0,11,4,0.363,0,0,0,3,3,1,12,9,21,4,4,0,Regular Season,TRUE,4,11
+Derek Harper,157,29400809,New York Knicks,Seattle SuperSonics,1995-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,36,7,3,0,0,11,3,0.273,4,1,0.25,0,0,0,3,0,3,3,5,0,Regular Season,TRUE,3,11
+Doug West,28,29400797,Minnesota Timberwolves,Los Angeles Lakers,1995-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,40,10,2,1,0,10,3,0.299,0,0,0,4,4,1,3,1,4,1,3,0,Regular Season,TRUE,3,10
+Dominique Wilkins,1122,29400803,Boston Celtics,New Jersey Nets,1995-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,25,9,1,0,0,10,3,0.299,3,1,0.333,2,2,1,2,1,3,2,1,0,Regular Season,TRUE,3,10
+Vin Baker,452,29301034,Milwaukee Bucks,Atlanta Hawks,1994-04-15T20:00:00Z,Regular Season,NA,NA,NA,0,1,38,11,3,0,1,15,4,0.267,0,0,0,6,3,0.5,1,6,7,6,3,0,Regular Season,TRUE,4,15
+Sean Elliott,251,29301024,Detroit Pistons,Boston Celtics,1994-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,27,9,1,0,2,13,4,0.307,1,0,0,4,1,0.25,0,3,3,2,0,0,Regular Season,TRUE,4,13
+Kevin Gamble,333,29301003,Boston Celtics,Detroit Pistons,1994-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,19,8,1,2,0,10,4,0.4,0,0,0,0,0,0,2,0,2,2,0,0,Regular Season,TRUE,4,10
+Kenny Anderson,72,29300812,New Jersey Nets,Charlotte Hornets,1994-03-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,38,8,15,0,2,12,3,0.25,3,0,0,2,2,1,4,1,5,3,3,0,Regular Season,TRUE,3,12
+Danny Manning,330,29300798,Atlanta Hawks,Chicago Bulls,1994-03-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,33,7,5,0,3,11,3,0.273,0,0,0,1,1,1,3,1,4,2,1,0,Regular Season,TRUE,3,11
+Dale Ellis,107,29300802,San Antonio Spurs,Seattle SuperSonics,1994-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,41,7,0,0,0,11,3,0.273,4,1,0.25,0,0,0,3,0,3,3,0,0,Regular Season,TRUE,3,11
+Kenny Anderson,72,29300427,New Jersey Nets,Washington Bullets,1994-01-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,39,4,16,0,5,11,1,0.09,2,0,0,2,2,1,4,0,4,1,2,0,Regular Season,TRUE,1,11
+Reggie Williams,199,29201033,Denver Nuggets,Dallas Mavericks,1993-04-16T20:00:00Z,Regular Season,NA,NA,NA,0,0,36,9,4,2,0,16,4,0.25,2,0,0,2,1,0.5,1,2,3,2,1,0,Regular Season,TRUE,4,16
+Patrick Ewing,121,29201014,New York Knicks,Washington Bullets,1993-04-13T20:00:00Z,Regular Season,NA,NA,NA,1,1,42,14,1,3,0,13,4,0.307,0,0,0,8,6,0.75,13,1,14,3,6,0,Regular Season,TRUE,4,13
+B.J. Armstrong,769,29201009,Chicago Bulls,Detroit Pistons,1993-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,31,8,2,0,1,12,4,0.333,2,0,0,0,0,0,0,1,1,3,0,0,Regular Season,TRUE,4,12
+Nate McMillan,203,29201001,Seattle SuperSonics,Los Angeles Lakers,1993-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,11,6,0,2,11,4,0.363,1,1,1,2,2,1,2,2,4,3,3,0,Regular Season,TRUE,4,11
+Byron Houston,780,29200994,Golden State Warriors,Dallas Mavericks,1993-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,31,12,2,0,0,10,4,0.4,0,0,0,5,4,0.8,3,3,6,6,5,0,Regular Season,TRUE,4,10
+Jud Buechler,146,29200824,Golden State Warriors,Boston Celtics,1993-03-16T20:00:00Z,Regular Season,NA,NA,NA,0,1,33,6,4,0,4,16,3,0.188,2,0,0,0,0,0,3,2,5,1,1,0,Regular Season,TRUE,3,16
+Sean Higgins,925,29200796,Golden State Warriors,New Jersey Nets,1993-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,19,6,4,0,0,11,3,0.273,2,0,0,0,0,0,1,1,2,1,4,0,Regular Season,TRUE,3,11
+Derek Harper,157,29200625,Dallas Mavericks,Boston Celtics,1993-02-12T20:00:00Z,Regular Season,NA,NA,NA,0,1,24,9,6,0,2,12,2,0.167,6,2,0.333,4,3,0.75,0,0,0,3,2,0,Regular Season,TRUE,2,12
+Luc Longley,26,29200611,Minnesota Timberwolves,Miami Heat,1993-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,27,4,1,3,1,10,2,0.2,0,0,0,0,0,0,5,4,9,1,2,0,Regular Season,TRUE,2,10
+Mark Price,899,49100049,Cleveland Cavaliers,Boston Celtics,1992-05-13T20:00:00Z,Playoffs,NA,NA,5,1,1,33,13,6,0,2,13,5,0.385,4,1,0.25,2,2,1,2,0,2,0,2,0,Postseason,TRUE,5,13
+John Starks,317,29101066,New York Knicks,Washington Bullets,1992-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,25,17,4,0,0,14,4,0.285,6,1,0.167,8,8,1,1,2,3,1,0,0,Regular Season,TRUE,4,14
+Blair Rasmussen,78656,29101046,Atlanta Hawks,New Jersey Nets,1992-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,25,8,0,0,0,11,4,0.363,0,0,0,0,0,0,3,1,4,3,0,0,Regular Season,TRUE,4,11
+Dell Curry,209,29101041,Charlotte Hornets,Detroit Pistons,1992-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,21,9,3,1,0,10,4,0.4,4,1,0.25,0,0,0,4,0,4,1,3,0,Regular Season,TRUE,4,10
+Nate McMillan,203,29101043,Seattle SuperSonics,Portland Trail Blazers,1992-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,33,10,12,0,4,10,4,0.4,1,0,0,2,2,1,3,2,5,6,3,0,Regular Season,TRUE,4,10
+Tony Brown,76268,29101043,Seattle SuperSonics,Portland Trail Blazers,1992-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,17,9,1,0,0,10,4,0.4,3,0,0,3,1,0.333,1,0,1,5,0,0,Regular Season,TRUE,4,10
+Dale Ellis,107,29100829,Milwaukee Bucks,Portland Trail Blazers,1992-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,26,7,1,0,1,10,3,0.299,4,1,0.25,0,0,0,0,0,0,3,1,0,Regular Season,TRUE,3,10
+Hot Rod Williams,73,29100830,Cleveland Cavaliers,Phoenix Suns,1992-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,38,8,2,2,0,10,3,0.299,0,0,0,4,2,0.5,4,3,7,2,2,0,Regular Season,TRUE,3,10
+Scott Skiles,101,29100834,Orlando Magic,Denver Nuggets,1992-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,32,6,3,0,0,10,3,0.299,2,0,0,0,0,0,0,1,1,3,3,0,Regular Season,TRUE,3,10
+Bimbo Coles,902,29100835,Miami Heat,Boston Celtics,1992-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,27,12,3,1,1,10,3,0.299,0,0,0,6,6,1,0,0,0,2,0,0,Regular Season,TRUE,3,10
+Kevin McHale,1450,29001052,Boston Celtics,New York Knicks,1991-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,30,8,2,0,0,14,4,0.285,0,0,0,1,0,0,4,3,7,4,0,0,Regular Season,TRUE,4,14
+Vernon Maxwell,137,29001046,Houston Rockets,Sacramento Kings,1991-04-13T20:00:00Z,Regular Season,NA,NA,NA,1,0,35,10,2,0,2,13,4,0.307,4,1,0.25,2,1,0.5,5,2,7,3,3,0,Regular Season,TRUE,4,13
+Bill Wennington,82,29000815,Sacramento Kings,Golden State Warriors,1991-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,37,8,0,3,1,10,3,0.299,0,0,0,2,2,1,8,6,14,3,2,0,Regular Season,TRUE,3,10
+Trevor Wilson,1027,29000816,Atlanta Hawks,Chicago Bulls,1991-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,18,8,2,0,0,10,3,0.299,0,0,0,4,2,0.5,1,2,3,0,1,0,Regular Season,TRUE,3,10
+Maurice Cheeks,76385,48900046,New York Knicks,Detroit Pistons,1990-05-13T20:00:00Z,Playoffs,NA,NA,4,0,1,32,10,6,1,0,13,5,0.385,0,0,0,0,0,0,1,2,3,2,1,0,Postseason,TRUE,5,13
+Vinny Del Negro,219,28901028,Sacramento Kings,Phoenix Suns,1990-04-12T20:00:00Z,Regular Season,NA,NA,NA,0,1,20,8,5,1,1,12,4,0.333,0,0,0,0,0,0,4,1,5,4,0,0,Regular Season,TRUE,4,12
+Craig Ehlo,378,28901029,Cleveland Cavaliers,Washington Bullets,1990-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,44,9,6,0,1,12,4,0.333,1,0,0,3,1,0.333,2,1,3,2,1,0,Regular Season,TRUE,4,12
+Alex English,76673,28901032,Denver Nuggets,Seattle SuperSonics,1990-04-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,22,8,2,0,0,12,4,0.333,0,0,0,0,0,0,3,0,3,2,0,0,Regular Season,TRUE,4,12
+Tony Campbell,76338,28901033,Minnesota Timberwolves,Philadelphia 76ers,1990-04-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,24,11,1,0,1,12,4,0.333,0,0,0,3,3,1,1,1,2,2,3,0,Regular Season,TRUE,4,12
+Harvey Grant,265,28901015,Washington Bullets,Indiana Pacers,1990-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,30,8,2,1,1,10,4,0.4,1,0,0,0,0,0,5,2,7,2,1,0,Regular Season,TRUE,4,10
+Ledell Eackles,289,28901015,Washington Bullets,Indiana Pacers,1990-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,17,9,0,0,0,10,4,0.4,0,0,0,1,1,1,0,2,2,2,0,0,Regular Season,TRUE,4,10
+Kiki Vandeweghe,78404,28901020,New York Knicks,Detroit Pistons,1990-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,36,11,3,0,2,10,4,0.4,1,1,1,2,2,1,0,2,2,4,1,0,Regular Season,TRUE,4,10
+Sam Mitchell,417,28901021,Minnesota Timberwolves,Portland Trail Blazers,1990-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,22,13,0,1,2,10,4,0.4,0,0,0,5,5,1,3,6,9,3,0,0,Regular Season,TRUE,4,10
+Jack Sikma,78149,28901023,Milwaukee Bucks,Orlando Magic,1990-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,28,13,5,1,1,10,4,0.4,1,0,0,6,5,0.832,7,5,12,5,0,0,Regular Season,TRUE,4,10
+Gerald Wilkins,786,28900840,New York Knicks,Minnesota Timberwolves,1990-03-15T20:00:00Z,Regular Season,NA,NA,NA,0,0,34,10,2,0,1,15,3,0.2,2,0,0,4,4,1,1,1,2,0,1,0,Regular Season,TRUE,3,15
+Armen Gilliam,288,28900822,Charlotte Hornets,Los Angeles Lakers,1990-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,1,38,7,3,0,1,12,3,0.25,0,0,0,2,1,0.5,2,0,2,0,4,0,Regular Season,TRUE,3,12
+Clifford Robinson,361,28900813,Portland Trail Blazers,Washington Bullets,1990-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,17,8,0,1,1,10,3,0.299,0,0,0,2,2,1,3,2,5,4,0,0,Regular Season,TRUE,3,10
+Jerome Kersey,760,28800966,Portland Trail Blazers,Utah Jazz,1989-04-15T20:00:00Z,Regular Season,NA,NA,NA,0,1,40,11,0,2,2,15,4,0.267,0,0,0,4,3,0.75,5,7,12,3,3,0,Regular Season,TRUE,4,15
+Quintin Dailey,76497,28800970,Los Angeles Clippers,Los Angeles Lakers,1989-04-15T20:00:00Z,Regular Season,NA,NA,NA,1,1,29,10,1,0,1,15,4,0.267,0,0,0,2,2,1,2,4,6,4,2,0,Regular Season,TRUE,4,15
+Sleepy Floyd,76726,28800955,Houston Rockets,Phoenix Suns,1989-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,40,9,18,0,0,13,4,0.307,4,1,0.25,0,0,0,7,0,7,4,3,0,Regular Season,TRUE,4,13
+Brad Daugherty,921,28800947,Cleveland Cavaliers,Detroit Pistons,1989-04-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,10,1,0,0,12,4,0.333,0,0,0,2,2,1,4,1,5,2,1,0,Regular Season,TRUE,4,12
+Ron Anderson,76046,28800942,Philadelphia 76ers,Cleveland Cavaliers,1989-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,25,8,2,0,0,11,4,0.363,0,0,0,0,0,0,2,1,3,3,2,0,Regular Season,TRUE,4,11
+Terry Porter,345,28800944,Portland Trail Blazers,Los Angeles Clippers,1989-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,34,10,15,1,4,11,4,0.363,3,1,0.333,1,1,1,8,2,10,1,1,0,Regular Season,TRUE,4,11
+Alvin Robertson,926,28800934,San Antonio Spurs,Seattle SuperSonics,1989-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,34,11,4,0,2,10,4,0.4,2,1,0.5,2,2,1,6,2,8,3,5,0,Regular Season,TRUE,4,10
+Harold Pressley,77881,28800935,Sacramento Kings,Miami Heat,1989-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,33,11,5,2,2,10,4,0.4,6,2,0.333,2,1,0.5,6,1,7,1,0,0,Regular Season,TRUE,4,10
+Jeff Malone,117,28800940,Washington Bullets,Detroit Pistons,1989-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,1,17,10,0,0,0,10,4,0.4,0,0,0,4,2,0.5,1,0,1,3,0,0,Regular Season,TRUE,4,10
+Byron Scott,2,48700078,Los Angeles Lakers,Detroit Pistons,1988-06-16T20:00:00Z,Playoffs,NA,NA,5,0,0,44,15,2,0,3,16,6,0.375,1,1,1,5,2,0.4,3,2,5,3,2,0,Postseason,TRUE,6,16
+Gerald Wilkins,786,28700869,New York Knicks,Indiana Pacers,1988-04-13T20:00:00Z,Regular Season,NA,NA,NA,1,1,32,14,6,0,2,13,4,0.307,1,0,0,6,6,1,1,0,1,1,1,0,Regular Season,TRUE,4,13
+Alvan Adams,76011,28700872,Phoenix Suns,San Antonio Spurs,1988-04-13T20:00:00Z,Regular Season,NA,NA,NA,1,1,21,11,2,0,0,13,4,0.307,0,0,0,3,3,1,1,3,4,2,1,0,Regular Season,TRUE,4,13
+Moses Malone,77449,28700875,Washington Bullets,Philadelphia 76ers,1988-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,43,18,7,1,0,13,4,0.307,1,0,0,12,10,0.832,8,2,10,4,2,0,Regular Season,TRUE,4,13
+Sam Perkins,64,28700866,Dallas Mavericks,Sacramento Kings,1988-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,34,13,1,0,2,12,4,0.333,0,0,0,6,5,0.832,4,5,9,2,1,0,Regular Season,TRUE,4,12
+Kevin Johnson,134,28700858,Phoenix Suns,Denver Nuggets,1988-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,34,10,9,0,0,11,4,0.363,1,0,0,2,2,1,3,1,4,3,0,0,Regular Season,TRUE,4,11
+Dennis Rodman,23,28700859,Detroit Pistons,New York Knicks,1988-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,25,8,0,0,1,11,4,0.363,1,0,0,0,0,0,4,4,8,3,2,0,Regular Season,TRUE,4,11
+Mike Gminski,76826,28700862,Philadelphia 76ers,Milwaukee Bucks,1988-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,35,14,1,1,1,11,4,0.363,0,0,0,6,6,1,11,1,12,2,5,0,Regular Season,TRUE,4,11
+Michael Cooper,76444,28600902,Los Angeles Lakers,Phoenix Suns,1987-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,26,10,6,1,1,12,4,0.333,4,0,0,2,2,1,3,0,3,0,0,0,Regular Season,TRUE,4,12
+Detlef Schrempf,96,28600894,Dallas Mavericks,Los Angeles Clippers,1987-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,26,17,6,0,1,11,4,0.363,1,0,0,10,9,0.9,4,3,7,3,2,0,Regular Season,TRUE,4,11
+Mike McGee,77530,28600888,Atlanta Hawks,Detroit Pistons,1987-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,22,10,2,0,2,10,4,0.4,3,2,0.667,1,0,0,2,0,2,2,2,0,Regular Season,TRUE,4,10
+Johnny Dawkins,1008,28600890,San Antonio Spurs,Los Angeles Lakers,1987-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,20,8,3,0,1,10,4,0.4,1,0,0,0,0,0,0,0,0,1,1,0,Regular Season,TRUE,4,10
+Maurice Cheeks,76385,28600705,Philadelphia 76ers,Cleveland Cavaliers,1987-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,38,12,5,0,4,10,3,0.299,0,0,0,8,6,0.75,0,1,1,0,5,0,Regular Season,TRUE,3,10
+Mickey Johnson,77168,28500936,New Jersey Nets,Boston Celtics,1986-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,23,10,4,0,0,13,4,0.307,1,1,1,1,1,1,2,2,4,5,2,0,Regular Season,TRUE,4,13
+Isiah Thomas,78318,28500924,Detroit Pistons,New York Knicks,1986-04-11T20:00:00Z,Regular Season,NA,NA,NA,1,0,26,13,10,0,2,11,4,0.363,1,0,0,6,5,0.832,3,0,3,1,5,0,Regular Season,TRUE,4,11
+Bob Hansen,76942,28500918,Utah Jazz,Sacramento Kings,1986-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,25,13,2,0,1,10,4,0.4,2,0,0,6,5,0.832,2,0,2,3,0,0,Regular Season,TRUE,4,10
+Alvin Robertson,926,28500759,San Antonio Spurs,Boston Celtics,1986-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,33,12,3,2,5,13,3,0.231,0,0,0,6,6,1,0,2,2,3,1,0,Regular Season,TRUE,3,13
+Tom Chambers,1472,28500751,Seattle SuperSonics,Los Angeles Clippers,1986-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,34,13,0,1,1,12,3,0.25,3,1,0.333,7,6,0.856,6,4,10,5,3,0,Regular Season,TRUE,3,12
+LaSalle Thompson,78,28400920,Kansas City Kings,Houston Rockets,1985-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,31,15,1,1,2,11,4,0.363,0,0,0,9,7,0.778,4,5,9,6,3,0,Regular Season,TRUE,4,11
+Ernie Grunfeld,76899,28400913,New York Knicks,Atlanta Hawks,1985-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,30,12,1,0,2,10,4,0.4,0,0,0,4,4,1,2,0,2,5,2,0,Regular Season,TRUE,4,10
+Maurice Cheeks,76385,28400915,Philadelphia 76ers,New Jersey Nets,1985-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,22,10,1,0,1,10,4,0.4,1,0,0,2,2,1,1,1,2,0,0,0,Regular Season,TRUE,4,10
+Julius Erving,76681,28400753,Philadelphia 76ers,Los Angeles Clippers,1985-03-13T20:00:00Z,Regular Season,NA,NA,NA,1,1,29,8,2,2,0,13,3,0.231,0,0,0,3,2,0.667,4,0,4,0,3,0,Regular Season,TRUE,3,13
+Terry Cummings,187,28300934,San Diego Clippers,Utah Jazz,1984-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,37,21,6,0,2,14,4,0.285,0,0,0,14,13,0.929,9,4,13,3,1,0,Regular Season,TRUE,4,14
+Marques Johnson,77160,28300936,Milwaukee Bucks,Indiana Pacers,1984-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,34,12,4,0,3,14,4,0.285,0,0,0,4,4,1,4,2,6,2,4,0,Regular Season,TRUE,4,14
+David Greenwood,76881,28300927,Chicago Bulls,Milwaukee Bucks,1984-04-13T20:00:00Z,Regular Season,NA,NA,NA,0,1,32,13,0,1,0,13,4,0.307,0,0,0,6,5,0.832,10,2,12,1,3,0,Regular Season,TRUE,4,13
+Lewis Lloyd,77395,28300915,Houston Rockets,Denver Nuggets,1984-04-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,23,10,2,0,3,11,4,0.363,0,0,0,2,2,1,1,3,4,1,2,0,Regular Season,TRUE,4,11
+Kyle Macy,77438,28300904,Phoenix Suns,Portland Trail Blazers,1984-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,30,9,4,0,3,10,4,0.4,2,1,0.5,0,0,0,5,1,6,3,0,0,Regular Season,TRUE,4,10
+Lafayette Lever,77376,28300563,Portland Trail Blazers,Denver Nuggets,1984-02-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,24,5,10,1,4,10,2,0.2,0,0,0,1,1,1,1,1,2,1,2,0,Regular Season,TRUE,2,10
+George Gervin,76804,28200928,San Antonio Spurs,Utah Jazz,1983-04-15T20:00:00Z,Regular Season,NA,NA,NA,1,1,28,14,1,0,2,15,4,0.267,1,0,0,7,6,0.856,0,0,5,3,0,0,Regular Season,TRUE,4,15
+Sidney Moncrief,77626,28200921,Milwaukee Bucks,Washington Bullets,1983-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,42,17,4,0,2,14,4,0.285,0,0,0,10,9,0.9,4,1,5,1,4,0,Regular Season,TRUE,4,14
+Rick Robey,77984,28200906,Boston Celtics,New Jersey Nets,1983-04-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,24,13,1,0,0,12,4,0.333,0,0,0,6,5,0.832,3,4,7,3,3,0,Regular Season,TRUE,4,12
+Terry Tyler,78390,28200893,Detroit Pistons,Boston Celtics,1983-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,8,3,0,0,10,4,0.4,0,0,0,0,0,0,7,2,9,1,0,0,Regular Season,TRUE,4,10
+Rod Higgins,77019,28200894,Chicago Bulls,Milwaukee Bucks,1983-04-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,40,17,1,0,2,10,4,0.4,0,0,0,12,9,0.75,2,4,6,4,1,0,Regular Season,TRUE,4,10
+Lonnie Shelton,78133,28200899,Seattle SuperSonics,Portland Trail Blazers,1983-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,38,11,5,5,1,10,4,0.4,0,0,0,4,3,0.75,5,2,7,4,2,0,Regular Season,TRUE,4,10
+Julius Erving,76681,28200726,Philadelphia 76ers,Washington Bullets,1983-03-12T20:00:00Z,Regular Season,NA,NA,NA,1,0,35,15,1,1,0,12,3,0.25,0,0,0,12,9,0.75,0,0,10,2,0,0,Regular Season,TRUE,3,12
+Maurice Lucas,77420,28200577,Phoenix Suns,San Diego Clippers,1983-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,34,9,2,1,1,10,2,0.2,0,0,0,6,5,0.832,5,5,10,2,2,0,Regular Season,TRUE,2,10
+Alvan Adams,76011,28100915,Phoenix Suns,San Antonio Spurs,1982-04-14T20:00:00Z,Regular Season,NA,NA,NA,1,1,23,9,3,0,3,14,4,0.285,0,0,0,1,1,1,3,2,5,4,3,0,Regular Season,TRUE,4,14
+Mike O'Koren,77754,28100891,New Jersey Nets,Indiana Pacers,1982-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,21,9,3,0,0,10,4,0.4,1,0,0,1,1,1,0,0,4,1,0,0,Regular Season,TRUE,4,10
+Foots Walker,78436,28100891,New Jersey Nets,Indiana Pacers,1982-04-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,27,10,9,0,4,10,4,0.4,0,0,0,2,2,1,0,0,4,0,0,0,Regular Season,TRUE,4,10
+Alex English,76673,28100741,Denver Nuggets,Phoenix Suns,1982-03-17T20:00:00Z,Regular Season,NA,NA,NA,1,0,38,7,3,1,1,17,3,0.175,0,0,0,2,1,0.5,6,1,7,6,5,0,Regular Season,TRUE,3,17
+Louis Orr,77770,28100702,Indiana Pacers,Boston Celtics,1982-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,27,10,0,0,2,10,3,0.299,0,0,0,4,4,1,0,0,2,2,0,0,Regular Season,TRUE,3,10
+World Free,76753,28100555,Golden State Warriors,New Jersey Nets,1982-02-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,27,9,3,0,0,12,2,0.167,0,0,0,6,5,0.832,2,2,4,3,4,0,Regular Season,TRUE,2,12
+Kent Benson,76154,28100546,Detroit Pistons,New Jersey Nets,1982-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,34,4,1,0,0,10,2,0.2,0,0,0,0,0,0,0,0,9,1,0,0,Regular Season,TRUE,2,10
+Bobby Jones,77193,48000030,Philadelphia 76ers,Milwaukee Bucks,1981-04-12T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,4,0,0,27,13,2,1,2,12,4,0.333,0,0,0,5,5,1,0,0,4,4,2,0,Postseason,TRUE,4,12
+Brian Winters,78600,48000030,Milwaukee Bucks,Philadelphia 76ers,1981-04-12T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,4,1,1,25,10,2,0,2,12,4,0.333,0,0,0,3,2,0.667,0,0,3,3,2,0,Postseason,TRUE,4,12
+Jim Paxson,77819,28000842,Portland Trail Blazers,Houston Rockets,1981-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,25,9,5,0,0,13,3,0.231,1,0,0,4,3,0.75,0,0,0,1,2,0,Regular Season,TRUE,3,13
+Tom LaGarde,77328,28000833,Dallas Mavericks,Golden State Warriors,1981-03-12T20:00:00Z,Regular Season,NA,NA,NA,1,1,39,13,2,1,1,12,3,0.25,0,0,0,9,7,0.778,6,3,9,4,2,0,Regular Season,TRUE,3,12
+Bobby Jones,77193,28000825,Philadelphia 76ers,Indiana Pacers,1981-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,27,10,5,0,0,10,3,0.299,0,0,0,4,4,1,0,0,8,3,0,0,Regular Season,TRUE,3,10
+John Johnson,77152,28000665,Seattle SuperSonics,Boston Celtics,1981-02-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,32,6,3,0,0,10,2,0.2,0,0,0,2,2,1,5,1,6,2,3,0,Regular Season,TRUE,2,10
+Cedric Maxwell,77487,28000665,Boston Celtics,Seattle SuperSonics,1981-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,32,11,2,0,0,10,2,0.2,0,0,0,8,7,0.875,1,4,5,1,0,0,Regular Season,TRUE,2,10
+Jim Chones,76392,47900020,Los Angeles Lakers,Phoenix Suns,1980-04-11T20:00:00Z,Playoffs,West - Conf. Semifinals,NA,3,1,0,26,10,3,0,0,11,4,0.363,0,0,0,2,2,1,0,0,5,3,1,0,Postseason,TRUE,4,11
+Calvin Murphy,77669,47900022,Houston Rockets,Boston Celtics,1980-04-11T20:00:00Z,Playoffs,East - Conf. Semifinals,NA,2,0,0,41,9,2,0,0,11,4,0.363,0,0,0,1,1,1,0,0,1,3,0,0,Postseason,TRUE,4,11
+Mike Mitchell,77615,27900808,Cleveland Cavaliers,San Antonio Spurs,1980-03-15T20:00:00Z,Regular Season,NA,NA,NA,1,1,36,11,1,2,2,15,3,0.2,0,0,0,6,5,0.832,0,0,9,4,0,0,Regular Season,TRUE,3,15
+World Free,76753,27900075,San Diego Clippers,Milwaukee Bucks,1979-10-25T20:00:00Z,Regular Season,NA,NA,NA,0,1,44,30,5,1,1,25,10,0.4,0,0,0,13,10,0.769,0,0,3,4,4,0,Regular Season,TRUE,10,25
+Rudy Tomjanovich,78350,47800003,Houston Rockets,Atlanta Hawks,1979-04-11T20:00:00Z,Playoffs,East - First Round,NA,1,0,1,33,9,1,0,1,11,4,0.363,0,0,0,3,1,0.333,0,0,9,1,0,0,Postseason,TRUE,4,11
+Maurice Cheeks,76385,47800004,Philadelphia 76ers,New Jersey Nets,1979-04-11T20:00:00Z,Playoffs,East - First Round,NA,1,1,1,25,9,5,0,8,11,4,0.363,0,0,0,4,1,0.25,0,1,1,2,2,0,Postseason,TRUE,4,11
+Bob Nash,77688,27800757,Kansas City Kings,Houston Rockets,1979-03-14T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,7,1,0,1,14,3,0.213,0,0,0,2,1,0.5,0,0,4,4,0,0,Regular Season,TRUE,3,14
+Joe Bryant,76290,27800737,Philadelphia 76ers,New Jersey Nets,1979-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,17,9,1,0,0,11,3,0.273,0,0,0,7,3,0.428,0,0,7,4,0,0,Regular Season,TRUE,3,11
+Garfield Heard,76985,27800740,Phoenix Suns,Indiana Pacers,1979-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,0,29,6,1,2,1,11,3,0.273,0,0,0,1,0,0,3,3,6,3,0,0,Regular Season,TRUE,3,11
+Bob Nash,77688,27800742,Kansas City Kings,Portland Trail Blazers,1979-03-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,24,8,0,1,0,11,3,0.273,0,0,0,2,2,1,2,3,5,3,2,0,Regular Season,TRUE,3,11
+Randy Smith,78200,27800735,San Diego Clippers,Cleveland Cavaliers,1979-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,25,8,1,0,1,10,3,0.299,0,0,0,2,2,1,0,0,0,3,0,0,Regular Season,TRUE,3,10
+Bob Wilkerson,78531,27800626,Denver Nuggets,San Diego Clippers,1979-02-16T20:00:00Z,Regular Season,NA,NA,NA,0,1,34,8,5,0,2,16,2,0.125,0,0,0,4,4,1,2,6,8,5,2,0,Regular Season,TRUE,2,16
+Winford Boynes,76225,27800607,New Jersey Nets,San Diego Clippers,1979-02-11T20:00:00Z,Regular Season,NA,NA,NA,1,1,14,4,0,0,0,11,2,0.181,0,0,0,0,0,0,0,0,2,4,0,0,Regular Season,TRUE,2,11
+Bob Dandridge,76500,27700715,Washington Bullets,Houston Rockets,1978-03-10T20:00:00Z,Regular Season,NA,NA,NA,1,0,42,15,1,1,0,10,3,0.299,0,0,0,10,9,0.9,0,0,5,2,0,0,Regular Season,TRUE,3,10
+Dan Issel,77097,27700719,Denver Nuggets,Kansas City Kings,1978-03-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,27,15,4,0,2,10,3,0.299,0,0,0,11,9,0.817,6,1,7,5,1,0,Regular Season,TRUE,3,10
+Jack Sikma,78149,27700580,Seattle SuperSonics,Philadelphia 76ers,1978-02-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,29,7,0,0,0,12,2,0.167,0,0,0,3,3,1,4,5,9,4,0,0,Regular Season,TRUE,2,12
+Dennis Johnson,77141,27700570,Seattle SuperSonics,Denver Nuggets,1978-02-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,33,7,4,0,0,10,2,0.2,0,0,0,4,3,0.75,1,2,3,4,0,0,Regular Season,TRUE,2,10
+Anthony Roberts,77975,27700414,Denver Nuggets,New Orleans Jazz,1978-01-10T20:00:00Z,Regular Season,NA,NA,NA,1,1,22,8,2,0,0,10,1,0.1,0,0,0,8,6,0.75,2,4,6,4,1,0,Regular Season,TRUE,1,10
+Ralph Simpson,78157,27600864,Detroit Pistons,New York Knicks,1977-04-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,21,9,3,0,0,10,4,0.4,0,0,0,2,1,0.5,0,0,1,0,0,0,Regular Season,TRUE,4,10
+Mike Gale,76771,27600865,San Antonio Spurs,Milwaukee Bucks,1977-04-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,32,10,9,0,2,10,4,0.4,0,0,0,2,2,1,0,0,3,1,0,0,Regular Season,TRUE,4,10
+Dan Issel,77097,27600703,Denver Nuggets,Atlanta Hawks,1977-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,20,15,0,0,1,11,3,0.273,0,0,0,12,9,0.75,4,0,4,6,0,0,Regular Season,TRUE,3,11
+Fred Carter,76356,27600565,Milwaukee Bucks,Kansas City Kings,1977-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,20,6,1,1,0,10,2,0.2,0,0,0,2,2,1,0,0,0,1,0,0,Regular Season,TRUE,2,10
+Mike Sojourner,78217,27500275,Atlanta Hawks,Houston Rockets,1976-04-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,20,8,0,0,0,11,4,0.363,0,0,0,0,0,0,0,0,4,2,0,0,Regular Season,TRUE,4,11
+Ricky Sobers,78215,27500598,Phoenix Suns,Cleveland Cavaliers,1976-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,30,7,2,0,3,13,3,0.231,0,0,0,4,1,0.25,4,1,5,4,0,0,Regular Season,TRUE,3,13
+Garfield Heard,76985,47400212,Buffalo Braves,Washington Bullets,1975-04-12T19:00:00Z,Playoffs,East - Conf. Semifinals,NA,2,0,1,35,8,2,0,0,12,4,0.333,0,0,0,0,0,0,0,0,10,4,0,0,Postseason,TRUE,4,12
+Tom Henderson,76996,27400591,Atlanta Hawks,Washington Bullets,1975-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,20,6,1,0,0,11,3,0.273,0,0,0,0,0,0,0,0,2,3,0,0,Regular Season,TRUE,3,11
+Jerry Sloan,78173,27400350,Chicago Bulls,Seattle SuperSonics,1975-01-12T19:00:00Z,Regular Season,NA,NA,NA,1,0,41,7,6,0,0,12,1,0.083,0,0,0,6,5,0.832,0,0,10,5,0,0,Regular Season,TRUE,1,12
+Mike Riordan,77966,47303001,Capital Bullets,New York Knicks,1974-04-12T19:00:00Z,Playoffs,East - Conf. Semifinals,NA,7,0,0,41,10,0,0,0,12,4,0.333,0,0,0,2,2,1,0,0,5,5,0,0,Postseason,TRUE,4,12
+Jerry Sloan,78173,47300226,Chicago Bulls,Detroit Pistons,1974-04-11T19:00:00Z,Playoffs,West - Conf. Semifinals,NA,6,0,0,39,11,3,0,0,11,4,0.363,0,0,0,6,3,0.5,0,0,9,2,0,0,Postseason,TRUE,4,11
+Kevin Porter,77876,27300633,Capital Bullets,Houston Rockets,1974-03-13T20:00:00Z,Regular Season,NA,NA,NA,0,0,40,11,7,0,0,13,3,0.231,0,0,0,6,5,0.832,0,0,5,4,0,0,Regular Season,TRUE,3,13
+Butch Beard,76130,27300628,Golden State Warriors,Detroit Pistons,1974-03-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,28,6,4,0,1,12,3,0.25,0,0,0,0,0,0,1,2,3,2,0,0,Regular Season,TRUE,3,12
+Dave Bing,76166,27300515,Detroit Pistons,Buffalo Braves,1974-02-15T20:00:00Z,Regular Season,NA,NA,NA,0,0,0,6,0,0,0,15,2,0.133,0,0,0,3,2,0.667,0,0,0,0,0,0,Regular Season,TRUE,2,15
+Mike Bantom,76095,27300505,Phoenix Suns,Portland Trail Blazers,1974-02-12T20:00:00Z,Regular Season,NA,NA,NA,0,0,25,4,1,0,1,12,2,0.167,0,0,0,0,0,0,4,2,6,3,0,0,Regular Season,TRUE,2,12
+Bill Bridges,76253,27300496,Los Angeles Lakers,Chicago Bulls,1974-02-10T20:00:00Z,Regular Season,NA,NA,NA,0,0,26,4,0,0,0,10,2,0.2,0,0,0,0,0,0,0,0,8,2,0,0,Regular Season,TRUE,2,10
+Kenny McIntosh,77540,27300378,Seattle SuperSonics,New York Knicks,1974-01-11T20:00:00Z,Regular Season,NA,NA,NA,0,1,40,2,2,0,0,11,1,0.09,0,0,0,0,0,0,0,0,4,4,0,0,Regular Season,TRUE,1,11
+Mike Newlin,77710,27300061,Houston Rockets,Chicago Bulls,1973-10-26T19:30:00Z,Regular Season,NA,NA,NA,0,0,0,29,5,0,0,26,10,0.385,0,0,0,10,9,0.9,0,0,7,5,0,0,Regular Season,TRUE,10,26
+Jack Marin,77463,27200593,Houston Rockets,Golden State Warriors,1973-03-15T19:00:00Z,Regular Season,NA,NA,NA,0,0,41,8,3,0,0,15,3,0.2,0,0,0,4,2,0.5,0,0,5,4,0,0,Regular Season,TRUE,3,15
+Don May,77489,27200583,Philadelphia 76ers,Golden State Warriors,1973-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,1,27,12,0,0,0,11,3,0.273,0,0,0,6,6,1,0,0,6,1,0,0,Regular Season,TRUE,3,11
+Double D Davis,76521,27200573,Cleveland Cavaliers,Houston Rockets,1973-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,32,9,1,0,0,10,3,0.299,0,0,0,3,3,1,0,0,10,5,0,0,Regular Season,TRUE,3,10
+Fred Foster,76740,27200575,Detroit Pistons,Phoenix Suns,1973-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,25,8,3,0,0,10,3,0.299,0,0,0,4,2,0.5,0,0,1,0,0,0,Regular Season,TRUE,3,10
+Fred Hilton,77029,27100630,Buffalo Braves,Los Angeles Lakers,1972-03-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,17,6,1,0,0,12,3,0.25,0,0,0,0,0,0,0,0,1,2,0,0,Regular Season,TRUE,3,12
+Bingo Smith,78202,27100622,Cleveland Cavaliers,Los Angeles Lakers,1972-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,24,8,2,0,0,10,3,0.299,0,0,0,2,2,1,0,0,7,0,0,0,Regular Season,TRUE,3,10
+John Tresvant,78651,27100504,Baltimore Bullets,Houston Rockets,1972-02-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,28,6,2,0,0,11,2,0.181,0,0,0,2,2,1,0,0,16,3,0,0,Regular Season,TRUE,2,11
+John Mengelt,77580,27100498,Cincinnati Royals,Seattle SuperSonics,1972-02-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,16,6,2,0,0,10,2,0.2,0,0,0,2,2,1,0,0,3,0,0,0,Regular Season,TRUE,2,10
+Lenny Wilkens,78530,27100498,Seattle SuperSonics,Cincinnati Royals,1972-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,26,10,12,0,0,10,2,0.2,0,0,0,9,6,0.667,0,0,4,3,0,0,Regular Season,TRUE,2,10
+Lenny Wilkens,78530,27000662,Seattle SuperSonics,Baltimore Bullets,1971-03-14T19:00:00Z,Regular Season,NA,NA,NA,1,1,37,10,10,0,0,14,3,0.213,0,0,0,6,4,0.667,0,0,3,5,0,0,Regular Season,TRUE,3,14
+Bob Lanier,600005,27000645,Detroit Pistons,Seattle SuperSonics,1971-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,25,7,1,0,0,11,3,0.273,0,0,0,1,1,1,0,0,6,3,0,0,Regular Season,TRUE,3,11
+Leroy Ellis,76663,27000646,Portland Trail Blazers,Baltimore Bullets,1971-03-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,37,12,4,0,0,11,3,0.273,0,0,0,7,6,0.856,0,0,14,3,0,0,Regular Season,TRUE,3,11
+Cazzie Russell,78045,27000642,New York Knicks,Cincinnati Royals,1971-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,21,6,3,0,0,10,3,0.299,0,0,0,0,0,0,0,0,2,2,0,0,Regular Season,TRUE,3,10
+Jim McMillian,77554,27000520,Los Angeles Lakers,Milwaukee Bucks,1971-02-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,21,5,2,0,0,11,2,0.181,0,0,0,1,1,1,0,0,5,0,0,0,Regular Season,TRUE,2,11
+Pat Riley,77962,27000385,Los Angeles Lakers,Detroit Pistons,1971-01-10T19:00:00Z,Regular Season,NA,NA,NA,0,0,12,2,0,0,0,10,1,0.1,0,0,0,0,0,0,0,0,1,3,0,0,Regular Season,TRUE,1,10
+Howard Komives,77297,26800535,Detroit Pistons,San Francisco Warriors,1969-03-14T19:00:00Z,Regular Season,NA,NA,NA,0,0,39,12,8,0,0,14,3,0.213,0,0,0,7,6,0.856,0,0,5,4,0,0,Regular Season,TRUE,3,14
+Stu Lantz,77338,26800526,San Diego Rockets,Seattle SuperSonics,1969-03-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,31,11,4,0,0,12,3,0.25,0,0,0,6,5,0.832,0,0,12,2,0,0,Regular Season,TRUE,3,12
+Jim Fox,76747,26800521,Phoenix Suns,San Diego Rockets,1969-03-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,44,9,2,0,0,11,3,0.273,0,0,0,5,3,0.599,0,0,12,5,0,0,Regular Season,TRUE,3,11
+Hal Greer,76882,26800031,Philadelphia 76ers,Chicago Bulls,1968-10-26T19:00:00Z,Regular Season,NA,NA,NA,1,1,45,31,3,0,0,26,10,0.385,0,0,0,13,11,0.845,0,0,5,1,0,0,Regular Season,TRUE,10,26
+John Havlicek,76970,46700314,Boston Celtics,Philadelphia 76ers,1968-04-14T19:00:00Z,Playoffs,East - Conf. Finals,NA,4,0,1,39,9,8,0,0,14,4,0.285,0,0,0,4,1,0.25,0,0,5,5,0,0,Postseason,TRUE,4,14
+Don Nelson,77700,46700314,Boston Celtics,Philadelphia 76ers,1968-04-14T19:00:00Z,Playoffs,East - Conf. Finals,NA,4,0,1,29,11,1,0,0,14,4,0.285,0,0,0,4,3,0.75,0,0,13,4,0,0,Postseason,TRUE,4,14
+Bob Warlick,78459,46700324,San Francisco Warriors,Los Angeles Lakers,1968-04-13T19:00:00Z,Playoffs,West - Conf. Finals,NA,4,0,1,0,13,3,0,0,13,4,0.307,0,0,0,5,5,1,0,0,6,1,0,0,Postseason,TRUE,4,13
+Earl Monroe,600006,26700473,Baltimore Bullets,Philadelphia 76ers,1968-03-15T19:00:00Z,Regular Season,NA,NA,NA,0,0,31,7,3,0,0,15,3,0.2,0,0,0,1,1,1,0,0,4,1,0,0,Regular Season,TRUE,3,15
+Freddie Crawford,76466,26700459,Los Angeles Lakers,Baltimore Bullets,1968-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,0,8,1,0,0,10,3,0.299,0,0,0,4,2,0.5,0,0,3,1,0,0,Regular Season,TRUE,3,10
+Joe Caldwell,76329,26700360,St. Louis Hawks,Chicago Bulls,1968-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,27,6,3,0,0,10,2,0.2,0,0,0,6,2,0.333,0,0,4,1,0,0,Regular Season,TRUE,2,10
+Dave Gambee,76774,26700361,San Diego Rockets,Cincinnati Royals,1968-02-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,0,5,0,0,0,10,2,0.2,0,0,0,3,1,0.333,0,0,8,4,0,0,Regular Season,TRUE,2,10
+Lucious Jackson,77103,46500314,Philadelphia 76ers,Boston Celtics,1966-04-10T19:00:00Z,Playoffs,East - Conf. Finals,NA,4,0,0,42,13,0,0,0,10,4,0.4,0,0,0,6,5,0.832,0,0,8,6,0,0,Postseason,TRUE,4,10
+Jerry Lucas,77418,26500267,Cincinnati Royals,Philadelphia 76ers,1966-02-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,0,5,1,0,0,11,2,0.181,0,0,0,1,1,1,0,0,8,1,0,0,Regular Season,TRUE,2,11
+Larry Jones,77200,26400347,Philadelphia 76ers,San Francisco Warriors,1965-03-16T19:00:00Z,Regular Season,NA,NA,NA,0,1,36,10,6,0,0,16,3,0.188,0,0,0,5,4,0.8,0,0,7,6,0,0,Regular Season,TRUE,3,16
+Dave Gambee,76774,26400332,Philadelphia 76ers,New York Knicks,1965-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,0,13,1,0,0,10,3,0.299,0,0,0,7,7,1,0,0,4,3,0,0,Regular Season,TRUE,3,10
+Leroy Ellis,76663,26400263,Los Angeles Lakers,Philadelphia 76ers,1965-02-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,0,6,0,0,0,10,2,0.2,0,0,0,4,2,0.5,0,0,4,3,0,0,Regular Season,TRUE,2,10
+Bob Boozer,76206,26300355,New York Knicks,Boston Celtics,1964-03-17T19:00:00Z,Regular Season,NA,NA,NA,0,0,21,6,3,0,0,17,3,0.175,0,0,0,0,0,0,0,0,11,1,0,0,Regular Season,TRUE,3,17
+Reggie Harding,76945,26300338,Detroit Pistons,Cincinnati Royals,1964-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,0,7,0,0,0,10,3,0.299,0,0,0,2,1,0.5,0,0,10,2,0,0,Regular Season,TRUE,3,10
+Rudy LaRusso,77340,46200327,Los Angeles Lakers,St. Louis Hawks,1963-04-11T19:00:00Z,Playoffs,West - Conf. Finals,NA,7,1,1,40,15,3,0,0,11,4,0.363,0,0,0,9,7,0.778,0,0,13,5,0,0,Postseason,TRUE,4,11
+Lee Shaffer,78121,26200357,Syracuse Nationals,Boston Celtics,1963-03-17T19:00:00Z,Regular Season,NA,NA,NA,0,0,29,10,0,0,0,17,3,0.175,0,0,0,4,4,1,0,0,0,4,0,0,Regular Season,TRUE,3,17
+Al Ferrari,76708,26000313,St. Louis Hawks,Philadelphia Warriors,1961-03-11T19:00:00Z,Regular Season,NA,NA,NA,1,1,31,6,5,0,0,11,3,0.273,0,0,0,1,0,0,0,0,1,0,0,0,Regular Season,TRUE,3,11
+Tom Gola,76828,45900211,Philadelphia Warriors,Syracuse Nationals,1960-03-11T19:00:00Z,Playoffs,East - Conf. Semifinals,NA,1,1,1,0,8,7,0,0,11,3,0.273,0,0,0,2,2,1,0,0,13,5,0,0,Postseason,TRUE,3,11
+Ray Felix,76704,25800285,New York Knicks,Boston Celtics,1959-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,15,6,0,0,0,10,3,0.299,0,0,0,0,0,0,0,0,8,2,0,0,Regular Season,TRUE,3,10
+Medford Park,77799,25800286,Cincinnati Royals,Philadelphia Warriors,1959-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,0,6,1,0,0,10,3,0.299,0,0,0,0,0,0,0,0,3,3,0,0,Regular Season,TRUE,3,10
+Joe Graboski,76838,25700288,Philadelphia Warriors,Syracuse Nationals,1958-03-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,33,14,2,0,0,12,3,0.25,0,0,0,12,8,0.667,0,0,15,4,0,0,Regular Season,TRUE,3,12
+Gene Shue,78142,25700225,Detroit Pistons,Philadelphia Warriors,1958-02-11T19:00:00Z,Regular Season,NA,NA,NA,0,0,0,9,2,0,0,11,2,0.181,0,0,0,6,5,0.832,0,0,6,2,0,0,Regular Season,TRUE,2,11
+Earl Lloyd,77394,25600283,Syracuse Nationals,Boston Celtics,1957-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,20,6,0,0,0,10,3,0.299,0,0,0,0,0,0,0,0,6,4,0,0,Regular Season,TRUE,3,10
+Harry Gallatin,76773,25600146,New York Knicks,Philadelphia Warriors,1957-01-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,0,6,0,0,0,12,1,0.083,0,0,0,7,4,0.57,0,0,7,3,0,0,Regular Season,TRUE,1,12
+Harry Gallatin,76773,25500278,New York Knicks,Syracuse Nationals,1956-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,27,8,5,0,0,10,3,0.299,0,0,0,3,2,0.667,0,0,8,0,0,0,Regular Season,TRUE,3,10
+Dick Hemric,76989,25500206,Boston Celtics,St. Louis Hawks,1956-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,18,7,0,0,0,10,2,0.2,0,0,0,5,3,0.599,0,0,0,0,0,0,Regular Season,TRUE,2,10
+George King,77268,25500207,Syracuse Nationals,New York Knicks,1956-02-10T19:00:00Z,Regular Season,NA,NA,NA,1,1,39,5,4,0,0,10,2,0.2,0,0,0,1,1,1,0,0,3,4,0,0,Regular Season,TRUE,2,10
+Earl Lloyd,77394,25400280,Syracuse Nationals,Minneapolis Lakers,1955-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,30,7,1,0,0,10,3,0.299,0,0,0,1,1,1,0,0,10,5,0,0,Regular Season,TRUE,3,10
+Slater Martin,77480,25400280,Minneapolis Lakers,Syracuse Nationals,1955-03-10T19:00:00Z,Regular Season,NA,NA,NA,1,0,39,13,7,0,0,10,3,0.299,0,0,0,8,7,0.875,0,0,1,3,0,0,Regular Season,TRUE,3,10
+Red Rocha,77999,25400280,Syracuse Nationals,Minneapolis Lakers,1955-03-10T19:00:00Z,Regular Season,NA,NA,NA,0,1,29,8,1,0,0,10,3,0.299,0,0,0,4,2,0.5,0,0,3,3,0,0,Regular Season,TRUE,3,10
+Wally Osterkorn,77775,45300415,Syracuse Nationals,Minneapolis Lakers,1954-04-10T19:00:00Z,Playoffs,NBA Finals,NA,5,0,1,45,14,0,0,0,10,4,0.4,0,0,0,9,6,0.667,0,0,7,3,0,0,Postseason,TRUE,4,10
+Jim Pollard,77867,45300415,Minneapolis Lakers,Syracuse Nationals,1954-04-10T19:00:00Z,Playoffs,NBA Finals,NA,5,1,0,39,10,0,0,0,10,4,0.4,0,0,0,2,2,1,0,0,9,5,0,0,Postseason,TRUE,4,10
+George King,77268,25300320,Syracuse Nationals,New York Knicks,1954-03-13T19:00:00Z,Regular Season,NA,NA,NA,0,0,35,9,2,0,0,13,3,0.231,0,0,0,4,3,0.75,0,0,7,3,0,0,Regular Season,TRUE,3,13
+Slater Martin,77480,25300239,Minneapolis Lakers,Milwaukee Hawks,1954-02-12T19:00:00Z,Regular Season,NA,NA,NA,0,0,0,4,0,0,0,12,2,0.167,0,0,0,0,0,0,0,0,0,5,0,0,Regular Season,TRUE,2,12
+Nat Clifton,76404,45000413,New York Knicks,Rochester Royals,1951-04-11T19:00:00Z,Playoffs,NA,NA,3,0,1,0,9,1,0,0,11,4,0.363,0,0,0,1,1,1,0,0,11,6,0,0,Postseason,TRUE,4,11

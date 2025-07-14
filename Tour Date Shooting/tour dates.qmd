@@ -1,0 +1,440 @@
+---
+title: "Who are the NBA's Best 'Musicians'?"
+author: "Sumitro Datta"
+date: today
+toc: true
+format: html
+editor: visual
+---
+
+## Introduction
+
+Over the past couple of years, it feels like the usage of "tour dates" as an insult for poor shooting has increased. [Jalen Rose](https://np.reddit.com/r/nba/comments/u3706s/jalen_rose_on_james_harden_his_stats_have_to_look/?rdt=48366) used it to describe James Harden's shooting 3 years ago, and Harden hasn't been able to [escape the term](http://np.reddit.com/r/nba/comments/1j2b0zr/comment/mfqfgcx/). In March, [Luka & Austin Reaves](http://np.reddit.com/r/nba/comments/1j8fy37/luka_doncic_and_austin_reaves_put_up_tour_dates/?rdt=55808) shot 8/26 and 3/14 respectively in a loss against the tanking Nets.
+
+This latest post piqued my curiosity, and I wanted to see if we could get historical data and determine the NBA's best "musicians". On Kaggle, Eoin Moore has compiled a [dataset of historical box scores](https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores) which is tailor-made for this analysis.
+
+## Data Gathering
+
+```{r load_packages}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, RKaggle,gt)
+```
+
+```{r get_box}
+#| output: false
+#| cache: true
+
+box_scores=get_dataset(
+  "eoinamoore/historical-nba-data-and-player-box-scores"
+  ) %>% .[[4]]
+```
+
+```{r game_types}
+glimpse(box_scores)
+
+box_scores %>% distinct(gameType) %>% gt()
+```
+
+## Data Cleaning
+
+We'll do some cleaning of the data:
+
+-   filter out pre-season games
+
+-   remove rows with the NA value in the minutes column (which means the player didn't play in the game)
+
+-   add postseason and regular season game indicators based off the gameType column
+
+-   put names together for player, team and opponent to consolidate those columns
+
+```{r clean}
+clean_box_scores=box_scores %>% 
+  # remove games in preseason
+  filter(gameType != "Preseason") %>%
+  # remove NAs in minutes (didn't play in game)
+  filter(!is.na(numMinutes)) %>%
+  # game type classification
+  mutate(trueGameType=case_when(
+    gameType %in% c("Playoffs","Play-in Tournament")~"Postseason",
+    gameType %in% c(
+      "Regular Season","NBA Cup","NBA Emirates Cup"
+      )~"Regular Season",
+    TRUE~"TBD"
+  )) %>%
+  #put names together for player, team & opponent
+  mutate(name=paste(firstName,lastName),.before="personId") %>%
+  mutate(team=paste(playerteamCity,playerteamName),
+         .after="gameId") %>%
+  mutate(opponent=paste(opponentteamCity,opponentteamName),
+         .after="team") %>%
+  select(-c(firstName,lastName,
+            playerteamCity,playerteamName,
+            opponentteamCity,opponentteamName))
+clean_box_scores %>% slice_sample(n=5) %>% gt()
+```
+
+### Get Active Players
+
+We'll identify active players as those who have played a game this 2024-2025 season (which began on 2024-10-22).
+
+```{r get_actives}
+active_players=clean_box_scores %>% 
+  filter(gameDate>='2024-10-22') %>% 
+  distinct(name,personId)
+active_players %>% slice_sample(n=5) %>% gt()
+```
+
+## Defining a "Tour Date" Game
+
+Just because shooting resembles a date doesn't necessarily make it a "tour date" game, so our first step is to define it.
+
+-   The month refers to a player's field goals made, while the day refers to a player's field goals attempted.
+
+-   "Tour dates" are bad games: no one's referred to a 10/12 shooting game as a "tour date". We define a bad game as shooting less than or equal to 40% from the field.
+
+-   "Tour dates" are not low volume games: no one's referred to a 1/3 shooting game as a "tour date". We set the minimum field goals attempted to be 10.
+
+-   Dates need to be valid:
+
+    -   if field goals made is one of 1, 3, 5, 7, 8, 10 or 12, the field goals attempted must be less than or equal to 31
+
+    -   if field goals made is one of 4, 6, 9, or 11, the field goals attempted must be less than or equal to 30
+
+    -   if field goals made is 2, the field goals attempted must be less than or equal to 29
+
+```{r tour_date_definition}
+clean_box_w_tour_dates=clean_box_scores %>% 
+  mutate(tour_date=
+       # tour dates are used to signify bad games (a 5/7 game would not be considered a "tour date")
+       # take bad game to be <40% from the field
+       fieldGoalsPercentage<=0.4 & 
+       # field goals attempted is day of date; low volume is not recognized as bad game, so min FGA >=10
+       fieldGoalsAttempted>=10 & 
+       # make sure dates are valid; field goals made is month of date
+      (
+        (fieldGoalsMade %in% c(1,3,5,7,8,10,12) &
+           fieldGoalsAttempted <=31)|
+          (fieldGoalsMade %in% c(4,6,9,11) & 
+             fieldGoalsAttempted <=30)|
+       (fieldGoalsMade == 2 & 
+          fieldGoalsAttempted <=29)
+       )
+      )
+
+clean_box_w_tour_dates %>% filter(tour_date) %>% 
+  select(name:opponent,gameDate,contains("field")) %>% 
+  slice_sample(n=5) %>% gt() %>%
+  fmt_percent(columns=fieldGoalsPercentage)
+```
+
+Now that we've defined a "tour date", some simple filters & joins allow us to see "tour dates" per player, as well as "tour dates percents" per player.
+
+```{r tour_dates_per_player}
+tour_dates_per_player=clean_box_w_tour_dates %>% 
+  group_by(name,personId) %>% 
+  reframe(postseason_games=sum(trueGameType=="Postseason"),
+          reg_season_games=sum(trueGameType=="Regular Season"),
+          tour_date_postseason=sum(
+            tour_date & trueGameType=="Postseason"
+            ),
+          tour_date_reg_season=sum(
+            tour_date & trueGameType=="Regular Season"
+          )
+          ) %>%
+  mutate(tot_games=postseason_games+reg_season_games,
+         tot_tour_date_games=tour_date_postseason+
+           tour_date_reg_season,
+         tot_tour_date_percent=tot_tour_date_games/tot_games,
+         postseason_tour_date_percent=
+           tour_date_postseason/postseason_games,
+         reg_season_tour_date_percent=
+           tour_date_reg_season/reg_season_games)
+tour_dates_per_player %>%
+  select(-personId) %>% slice_sample(n=10) %>% gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+## Results
+
+We filter for players who have played at least 25 games to get rid of players ranking high in tour_date_percent because the few games they played were duds.
+
+### Top 10 All-Time in Tour Date Percent (minimum 25 games played)
+
+```{r top_10_all_time_percent}
+tour_dates_per_player %>% filter(tot_games>=25) %>% 
+  slice_max(tot_tour_date_percent,n=10) %>% 
+  select(-personId) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  tab_header(
+    title="Top 10 All-Time in Career Tour Date Percent",
+    subtitle="Minimum 25 games played.") %>%
+  tab_footnote(
+    footnote = "Tour Date Game is below 40% shooting on minimum 10 FGA.",
+    locations = cells_title("title"),
+  ) %>%
+  tab_footnote(
+    footnote = "Play-In Tournament counts as Postseason",
+    locations = cells_column_spanners("Postseason"),
+  ) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+We’ve got brand-new Phoenix Sun Jalen Green topping the all-time leaderboard for now.
+
+### Top 10 All-Time in Tour Date Games
+
+```{r top_10_all_time_games}
+tour_dates_per_player %>% 
+  slice_max(tot_tour_date_games,n=10) %>% 
+  select(-personId) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  tab_header(
+    title="Top 10 All-Time in Career Tour Date Games"
+    ) %>%
+  tab_footnote(
+    footnote = "Tour Date Game is below 40% shooting on minimum 10 FGA.",
+    locations = cells_title("title"),
+  ) %>%
+  tab_footnote(
+    footnote = "Play-In Tournament counts as Postseason",
+    locations = cells_column_spanners("Postseason"),
+  ) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+Bar Joe Johnson, every name on this list is a clear Hall of Famer.
+
+### Top 10 Biggest Increase in Tour Date Percent from Regular Season to Postseason
+
+We filter for both minimums of 25 games played in the regular season and postseason.
+
+```{r biggest_increase_in_tour_date_percent}
+tour_dates_per_player %>% 
+  filter(reg_season_games>=25 & postseason_games>=25) %>% 
+  mutate(diff_in_percent=
+      postseason_tour_date_percent-
+        reg_season_tour_date_percent) %>%
+  slice_max(diff_in_percent,n=10) %>% 
+  select(-c(personId,contains("tot_"))) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_footnote(
+    footnote = "Play-In Tournament counts as Postseason",
+    locations = cells_column_spanners("Postseason"),
+  ) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent",
+    diff_in_percent~"Difference in Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+### Top 10 Biggest Decrease in Tour Date Percent from Regular Season to Postseason
+
+```{r biggest_decrease_in_tour_date_percent}
+tour_dates_per_player %>% 
+  filter(reg_season_games>=25 & postseason_games>=25) %>% 
+  mutate(diff_in_percent=
+      postseason_tour_date_percent-
+        reg_season_tour_date_percent) %>%
+  slice_min(diff_in_percent,n=10) %>% 
+  select(-c(personId,contains("tot_"))) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_footnote(
+    footnote = "Play-In Tournament counts as Postseason",
+    locations = cells_column_spanners("Postseason"),
+  ) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent",
+    diff_in_percent~"Difference in Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+
+```
+
+### Top 10 Active Players in Tour Date Percent (minimum 25 games played)
+
+```{r top_10_active_percent}
+left_join(active_players,tour_dates_per_player) %>% 
+  filter(tot_games>=25) %>% 
+  slice_max(tot_tour_date_percent,n=10) %>% 
+  select(-personId) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+Recently-waived Damian Lillard is the elder statesman in this group with 13 seasons in the NBA (Trae Young is next in this top 10 at 7 years of experience).
+
+### Top 10 Active in Tour Date Games
+
+```{r top_10_active_games}
+left_join(active_players,tour_dates_per_player) %>% 
+  filter(tot_games>=25) %>% 
+  slice_max(tot_tour_date_games,n=10) %>% 
+  select(-personId) %>% 
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+### Top 10 All-Time in Games Played without a Tour Date Game
+
+Granted, this could be because these players do not have many games over the 10 FGA minimum requirement.
+
+```{r top_10_no_tour_dates}
+tour_dates_per_player %>% 
+  filter(tot_tour_date_percent==0) %>% 
+  slice_max(tot_games,n=10) %>% 
+  select(name,contains("games")) %>%
+  select(-tot_tour_date_games) %>%
+  gt() %>%
+  tab_header(
+    title="Top 10 All-Time in Games Played without a Tour Date Game"
+    ) %>%
+  tab_footnote(
+    footnote = "Tour Date Game is below 40% shooting on minimum 10 FGA.",
+    locations = cells_title("title"),
+  )
+```
+
+A couple of familiar names on this list: 2x In-Season Tournament Champion Darvin Ham, and active Dallas Mavericks centre Daniel Gafford.
+
+### Top 10 Players in Tour Date Percent in 2024-2025
+
+minimum 20 games played
+
+```{r top_10_tour_dates_24_25}
+tour_dates_per_player_curr_seas=clean_box_w_tour_dates %>% 
+  filter(gameDate>='2024-10-22') %>%
+  group_by(name,personId) %>% 
+  reframe(postseason_games=sum(trueGameType=="Postseason"),
+          reg_season_games=sum(trueGameType=="Regular Season"),
+          tour_date_postseason=sum(
+            tour_date & trueGameType=="Postseason"
+            ),
+          tour_date_reg_season=sum(
+            tour_date & trueGameType=="Regular Season"
+          )
+          ) %>%
+  mutate(tot_games=postseason_games+reg_season_games,
+         tot_tour_date_games=tour_date_postseason+
+           tour_date_reg_season,
+         tot_tour_date_percent=tot_tour_date_games/tot_games,
+         postseason_tour_date_percent=
+           tour_date_postseason/postseason_games,
+         reg_season_tour_date_percent=
+           tour_date_reg_season/reg_season_games)
+tour_dates_per_player_curr_seas %>% 
+  filter(tot_games>=20) %>%
+  slice_max(tot_tour_date_percent,n=10) %>% 
+  select(-personId) %>%
+  gt() %>%
+  tab_spanner("Postseason",columns=contains("postseason")) %>%
+  tab_spanner("Regular Season",columns=contains("reg_season")) %>%
+  tab_spanner("Total",columns=contains("tot_")) %>%
+  tab_header(
+    title="Top 10 Players in Tour Date Percent in 2024-2025",
+    subtitle="Minimum 20 games played.") %>%
+  tab_footnote(
+    footnote = "Tour Date Game is below 40% shooting on minimum 10 FGA.",
+    locations = cells_title("title"),
+  ) %>%
+  tab_footnote(
+    footnote = "Play-In Tournament counts as Postseason",
+    locations = cells_column_spanners("Postseason"),
+  ) %>%
+  cols_label(
+    ends_with("games")~"Games",
+    contains("tour_date")~"Tour Dates",
+    contains("percent")~"Percent"
+  ) %>%
+  fmt_percent(columns=contains("percent"))
+```
+
+Jerami Grant had the highest likelihood of shooting a tour date in 2024-2025, while Jalen Green is your most prolific "musician" by volume.
+
+### Top 10 Players with Most Times Shooting a Tour Date that is the same date as the game
+
+```{r shoot_same_as_date}
+shooting_same_as_date=clean_box_w_tour_dates %>% 
+  filter(tour_date) %>%
+  mutate(month=month(gameDate),day=day(gameDate)) %>% 
+  filter(month==fieldGoalsMade,day==fieldGoalsAttempted)
+
+shooting_same_as_date %>% group_by(name,personId) %>% 
+  reframe(shoot_same_as_day=n()) %>% 
+  slice_max(shoot_same_as_day,n=5) %>% 
+  select(-personId) %>%
+  gt()
+```
+
+### Players who have shot a Tour Date that is the same date as the game in 2024-2025
+
+```{r shoot_same_as_date_24_25}
+shooting_same_as_date %>% 
+  arrange(desc(gameDate)) %>% 
+  filter(gameDate>='2024-10-22') %>%
+  select(name,team,opponent,
+         fieldGoalsMade,fieldGoalsAttempted,
+         fieldGoalsPercentage) %>% 
+  gt() %>% fmt_percent(columns=fieldGoalsPercentage)
+```
+
+```{r output_data}
+write_csv(clean_box_w_tour_dates %>% filter(tour_date),
+          "Output Data/All Tour Dates.csv")
+write_csv(shooting_same_as_date,
+          "Output Data/Tour Date Shooting Same as Date.csv")
+write_csv(tour_dates_per_player,
+          "Output Data/Tour Dates Per Player.csv")
+write_csv(active_players,
+          "Output Data/Active Players.csv")
+write_csv(tour_dates_per_player_curr_seas,
+          "Output Data/Tour Dates Per Player 2024-2025.csv")
+```
