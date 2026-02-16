@@ -1,0 +1,488 @@
+---
+title: "Rookie Victimizations"
+author: "Sumitro Datta"
+date: today
+toc: true
+format: html
+execute:
+  warning: false
+  message: false
+editor: visual
+---
+
+## Introduction
+
+The first time an NBA rookie checks into a game marks the end of a long, grueling journey. Just as inevitable is the humbling “welcome to the league” moment that follows. Whether it’s Kobe dunking on [Dwight](https://www.youtube.com/watch?v=xilW4WiS1Qo) or [Yao](https://www.youtube.com/watch?v=QDwWf58TQaU), Rip Hamilton hanging 44 on [LeBron](https://www.youtube.com/watch?v=HcscN0sDL7o), or Kevin Durant showing Julius Randle [every move he's got](https://www.youtube.com/watch?v=fcEC5dHKTl4), every rookie gets that lesson sooner or later.
+
+I wanted to see which player has "victimized" rookies the most this year.
+
+## Loading Packages
+
+```{r load_packages}
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse,janitor,hoopR,gt)
+```
+
+## Load Source Data
+
+First, we get a list of players who have played a game this season and what percentage of their team's games they have played.
+
+```{r hoopr_info}
+
+compact_standings=nba_leaguestandingsv3()$Standings %>% 
+  type_convert() %>%
+  select(TeamID,TeamCity,TeamName,Conference,Division,WINS,LOSSES) %>% 
+  mutate(TeamGP=WINS+LOSSES,TeamFullName=paste(TeamCity,TeamName))
+
+player_stats=nba_leaguedashplayerstats()$LeagueDashPlayerStats %>% 
+  type_convert()
+
+team_info=left_join(compact_standings,
+          player_stats %>% 
+            group_by(TEAM_ID) %>% 
+            slice(1) %>% 
+            select(TEAM_ID,TEAM_ABBREVIATION), 
+          by=join_by(TeamID==TEAM_ID))
+
+player_w_gp_percentages=left_join(
+  player_stats,
+  compact_standings %>% select(contains("Team")),
+  by=join_by(TEAM_ID==TeamID)) %>%
+  mutate(G_PERCENT=GP/TeamGP) %>%
+  select(PLAYER_ID:TD3,TeamCity:G_PERCENT)
+
+rm(compact_standings,team_info,player_stats)
+
+player_w_gp_percentages %>% slice_sample(n=5) %>%
+  select(player=PLAYER_NAME,team=TEAM_ABBREVIATION,GP,G_PERCENT) %>%
+  gt() %>% fmt_percent(G_PERCENT)
+```
+
+Next, we get a list of rookies this season.
+
+```{r get_rookies}
+
+rookies=nba_commonallplayers(is_only_current_season=1)$CommonAllPlayers %>%
+  type_convert() %>%
+  filter(FROM_YEAR==2025)
+
+rookies %>% slice_sample(n=5) %>% 
+  select(player=DISPLAY_FIRST_LAST,team=TEAM_ABBREVIATION) %>% 
+  gt()
+```
+
+Finally, we load the play-by-play data for 2025-2026. To make it less resource intensive when joining, we will create a subset that just includes events done by rookies.
+
+```{r load_pbp}
+
+pbp_25_26=read_csv("../Data/2025-26_pbp.csv")
+
+events_by_rookies=inner_join(pbp_25_26,rookies %>% select(PERSON_ID),
+             by=join_by(personId==PERSON_ID))
+```
+
+## Processing Data & Totals
+
+First, we have to define what a rookie victimization is. I took it to be one of three direct actions:
+
+-   stealing from a player
+
+-   blocking a player
+
+-   getting fouled by a player and subsequently shooting free throws
+
+```{r positive_events_against_rookies}
+
+#fouls and free throws have same timing, hence inner join
+free_throws_on_fouls_by_rookies=
+  inner_join(
+    #want to measure free throw trips, not total free throws
+    pbp_25_26 %>% filter(str_detect(description,"1 of")),
+    #get fouls only committed by rookies
+    events_by_rookies %>% filter(actionType=="Foul"),
+    by=join_by(gameId,clock,period)) %>%
+  #remove instances of technicals by same team player
+  filter(teamTricode.x != teamTricode.y)
+
+rookie_shots_blocked=
+  inner_join(pbp_25_26 %>% filter(str_detect(description,"BLOCK")),
+             events_by_rookies %>% filter(shotResult=="Missed"),
+             by=join_by(actionNumber,gameId,clock,period))
+
+steals_on_turnovers_by_rookies =
+  inner_join(pbp_25_26 %>% filter(str_detect(description,"STEAL")),
+             #steals are either bad pass or lost ball
+             events_by_rookies %>% 
+               filter(actionType=="Turnover",
+                      subType %in% c("Bad Pass","Lost Ball")),
+             by=join_by(gameId,clock,period))
+
+positive_events_against_rookies=
+  bind_rows(free_throws_on_fouls_by_rookies,
+            rookie_shots_blocked,
+            steals_on_turnovers_by_rookies)
+
+rm(free_throws_on_fouls_by_rookies,rookie_shots_blocked,
+   steals_on_turnovers_by_rookies)
+
+positive_events_against_rookies_summ=positive_events_against_rookies %>%
+  group_by(personId.x,playerNameI.x) %>%
+  summarize(num_times_stolen_from_rookie=
+              sum(str_detect(description.x,"STEAL")),
+            num_times_fouled_by_rookie=
+              sum(str_detect(description.x,"1 of")),
+            num_times_blocked_rookie=
+              sum(str_detect(description.x,"BLOCK")),
+            positive_events_against_rookies_total=
+              num_times_stolen_from_rookie+num_times_fouled_by_rookie+
+              num_times_blocked_rookie) %>% 
+  ungroup()
+```
+
+Here are the leaders in rookie victimizations, dominated by guards who are able to get rookies to foul them.
+
+```{r positive_events_against_rookies_summary}
+
+positive_events_against_rookies_summ %>% 
+  slice_max(positive_events_against_rookies_total,n=5) %>%
+  left_join(.,
+            player_w_gp_percentages %>% 
+              select(personId.x=PLAYER_ID,player=PLAYER_NAME)) %>%
+  relocate(player) %>% select(-c(personId.x,playerNameI.x)) %>%
+  gt() %>%
+  cols_label(num_times_stolen_from_rookie="Steals Against Rookie",
+             num_times_fouled_by_rookie="Fouled By Rookie",
+             num_times_blocked_rookie="Blocks Against Rookie",
+             positive_events_against_rookies_total="Positive Events") %>%
+  tab_header(
+    title="Most Positive Events Against Rookies in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  )
+```
+
+We can also look at the converse, which is the players getting victimized most by rookies:
+
+-   getting the ball stolen
+
+-   getting blocked
+
+-   fouling a player who subsequently goes to the free throw line
+
+```{r negative_events_against_rookies}
+
+fouls_on_free_throws_by_rookies=
+  inner_join(pbp_25_26 %>% filter(actionType=="Foul"),
+             #get free throw trips by rookies
+             events_by_rookies %>% filter(str_detect(description,"1 of")),
+             by=join_by(gameId,clock,period)) %>%
+  #remove instances of technicals by same team player
+  filter(teamTricode.x != teamTricode.y)
+
+shots_blocked_by_rookies=
+  inner_join(pbp_25_26 %>% filter(shotResult=="Missed"),
+             events_by_rookies %>% filter(str_detect(description,"BLOCK")),
+             by=join_by(actionNumber,gameId,clock,period))
+
+turnovers_on_steals_by_rookies =
+  inner_join(
+    #steals are either bad pass or lost ball
+    pbp_25_26 %>% 
+      filter(actionType=="Turnover",subType %in% c("Bad Pass","Lost Ball")),
+    events_by_rookies %>% filter(str_detect(description,"STEAL")),
+    by=join_by(gameId,clock,period))
+
+negative_events_against_rookies=
+  bind_rows(fouls_on_free_throws_by_rookies,
+            shots_blocked_by_rookies,
+            turnovers_on_steals_by_rookies)
+
+rm(fouls_on_free_throws_by_rookies,shots_blocked_by_rookies,
+   turnovers_on_steals_by_rookies)
+
+negative_events_against_rookies_summ=negative_events_against_rookies %>%
+  group_by(personId.x,playerNameI.x) %>%
+  summarize(num_times_stolen_by_rookie=
+              sum(str_detect(description.y,"STEAL")),
+            num_times_fouled_rookie=
+              sum(str_detect(description.y,"1 of")),
+            num_times_blocked_by_rookie=
+              sum(str_detect(description.y,"BLOCK")),
+            negative_events_against_rookies_total=
+              num_times_stolen_by_rookie+num_times_fouled_rookie+
+              num_times_blocked_by_rookie) %>% 
+  ungroup()
+```
+
+```{r negative_events_against_rookies_summary}
+negative_events_against_rookies_summ %>% 
+  slice_max(negative_events_against_rookies_total,n=5) %>%
+  left_join(.,
+            player_w_gp_percentages %>% 
+              select(personId.x=PLAYER_ID,player=PLAYER_NAME)) %>%
+  relocate(player) %>% select(-c(personId.x,playerNameI.x)) %>%
+  gt() %>%
+  cols_label(num_times_stolen_by_rookie="Steals By Rookie",
+             num_times_fouled_rookie="Foul Against Rookie",
+             num_times_blocked_by_rookie="Blocks by Rookie",
+             negative_events_against_rookies_total="Negative Events") %>%
+  tab_header(
+    title="Most Negative Events Against Rookies in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  )
+```
+
+Scottie Barnes leads in getting victimized by rookies. However, a lot of these players play heavy minutes and thus have more opportunities to play against rookies. Let's take a look at normalizing per 36 minutes.
+
+## Per 36 Minutes
+
+We will also filter for players who have played at least 50% of their team's games and at least 12 minutes per game to alleviate small sample size concerns.
+
+```{r positive_per_36}
+positive_events_against_rookies_summ %>%
+  left_join(.,
+            player_w_gp_percentages %>% 
+              select(personId.x=PLAYER_ID,PLAYER_NAME,MIN,GP,G_PERCENT)) %>%
+  relocate(PLAYER_NAME) %>% select(-c(personId.x,playerNameI.x)) %>%
+  mutate(
+    across(
+      num_times_stolen_from_rookie:positive_events_against_rookies_total,
+      ~./MIN*36,
+      .names="{.col}_per_36"),
+    MPG=MIN/GP) %>%
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  select(player=PLAYER_NAME,GP,MPG,contains("per_36")) %>%
+  slice_max(positive_events_against_rookies_total_per_36,n=5) %>%
+  gt() %>%
+  tab_spanner(label="Per 36",ends_with("per_36")) %>%
+  cols_label(contains("stolen")~"Steals Against Rookie",
+             contains("fouled")~"Fouled By Rookie",
+             contains("blocked")~"Blocks Against Rookie",
+             contains("total")~"Positive Events") %>%
+  fmt_number(ends_with("per_36"),decimals=4) %>%
+  fmt_number(MPG,decimals=1) %>%
+  tab_header(
+    title="Most Positive Events Against Rookies Per 36 in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 50% of team games played",
+    locations = cells_column_labels(GP)
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 12 minutes per game",
+    locations = cells_column_labels(MPG)
+  ) 
+```
+
+Doncic and Harden remain from the raw-totals top 5. Penda is the impersonation of the "polar bear in Arlington, Texas" meme in this top 5, being a rookie himself and only playing 13.7 minutes a game.
+
+```{r negative_per_36}
+negative_events_against_rookies_summ %>%
+  left_join(.,
+            player_w_gp_percentages %>% 
+              select(personId.x=PLAYER_ID,PLAYER_NAME,MIN,GP,G_PERCENT)) %>%
+  relocate(PLAYER_NAME) %>% select(-c(personId.x,playerNameI.x)) %>%
+  mutate(
+    across(
+      num_times_stolen_by_rookie:negative_events_against_rookies_total,
+      ~./MIN*36,
+      .names="{.col}_per_36"),
+    MPG=MIN/GP) %>%
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  select(player=PLAYER_NAME,GP,MPG,contains("per_36")) %>%
+  slice_max(negative_events_against_rookies_total_per_36,n=5) %>%
+  gt() %>%
+  tab_spanner(label="Per 36",ends_with("per_36")) %>%
+  cols_label(contains("stolen")~"Steals By Rookie",
+             contains("fouled")~"Fouled Against Rookie",
+             contains("blocked")~"Blocks By Rookie",
+             contains("total")~"Negative Events") %>%
+  fmt_number(ends_with("per_36"),decimals=4) %>%
+  fmt_number(MPG,decimals=1) %>%
+  tab_header(
+    title="Most Negative Events Against Rookies Per 36 in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 50% of team games played",
+    locations = cells_column_labels(GP)
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 12 minutes per game",
+    locations = cells_column_labels(MPG)
+  ) 
+```
+
+Cole Anthony has been victimized by a rookie at least once per 36 minutes. We saw in the raw totals that Luka Doncic showed up in the top 5 on both sides of the equation. Let's take a look at net events per 36 to see who's dishing it but not taking it.
+
+## Net Events Per 36 Minutes
+
+```{r net_events_per_36}
+events_against_rookies_summ=full_join(positive_events_against_rookies_summ,
+          negative_events_against_rookies_summ) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x, 0))) %>%
+  left_join(.,
+            player_w_gp_percentages %>% 
+              select(personId.x=PLAYER_ID,PLAYER_NAME,team=TEAM_ABBREVIATION,
+                     GP,G_PERCENT,MIN)) %>%
+  mutate(MPG=MIN/GP) %>%
+  relocate(PLAYER_NAME,team,GP,G_PERCENT,MIN,MPG) %>% 
+  select(-c(personId.x,playerNameI.x)) %>%
+  mutate(
+    across(
+      num_times_stolen_from_rookie:negative_events_against_rookies_total,
+      ~./MIN*36,
+      .names="{.col}_per_36")) %>%
+  mutate(net_events_against_rookies_total_per_36=
+           positive_events_against_rookies_total_per_36-
+           negative_events_against_rookies_total_per_36)
+
+write_csv(events_against_rookies_summ,"Events Against Rookies Summary.csv")
+```
+
+```{r welcome_to_the_league_rook}
+events_against_rookies_summ %>% 
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  select(player=PLAYER_NAME,GP,MPG,
+         num_times_stolen_from_rookie,num_times_fouled_by_rookie,
+         num_times_blocked_rookie,num_times_stolen_by_rookie,
+         num_times_fouled_rookie,num_times_blocked_by_rookie,
+         positive_events_against_rookies_total_per_36,
+         negative_events_against_rookies_total_per_36,
+         net_events_against_rookies_total_per_36) %>%
+  slice_max(net_events_against_rookies_total_per_36,n=5) %>%
+  gt() %>%
+  tab_spanner(label="Positive Events",4:6) %>%
+  tab_spanner(label="Negative Events",7:9) %>%
+  tab_spanner(label="Per 36",ends_with("per_36")) %>%
+  cols_label(num_times_stolen_from_rookie="Steals Against Rookie",
+             num_times_stolen_by_rookie="Steals By Rookie",
+             num_times_fouled_by_rookie="Fouled By Rookie",
+             num_times_fouled_rookie="Foul Against Rookie",
+             num_times_blocked_rookie="Blocks Against Rookie",
+             num_times_blocked_by_rookie="Blocks by Rookie",
+             positive_events_against_rookies_total_per_36="Positive Events",
+             negative_events_against_rookies_total_per_36="Negative Events",
+             net_events_against_rookies_total_per_36="Net Events") %>%
+  fmt_number(ends_with("per_36"),decimals=4) %>%
+  fmt_number(MPG,decimals=1) %>%
+  tab_header(
+    title="Highest Net Events Against Rookies Per 36 in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 50% of team games played",
+    locations = cells_column_labels(GP)
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 12 minutes per game",
+    locations = cells_column_labels(MPG)
+  ) 
+```
+
+Austin Reaves tops the leaderboard on the back of getting fouled 18 times by rookies, while only fouling rookies twice.
+
+```{r future_is_now_old_man}
+events_against_rookies_summ %>% 
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  select(player=PLAYER_NAME,GP,MPG,
+         num_times_stolen_from_rookie,num_times_fouled_by_rookie,
+         num_times_blocked_rookie,num_times_stolen_by_rookie,
+         num_times_fouled_rookie,num_times_blocked_by_rookie,
+         positive_events_against_rookies_total_per_36,
+         negative_events_against_rookies_total_per_36,
+         net_events_against_rookies_total_per_36) %>%
+  slice_min(net_events_against_rookies_total_per_36,n=5) %>%
+  gt() %>%
+  tab_spanner(label="Positive Events",4:6) %>%
+  tab_spanner(label="Negative Events",7:9) %>%
+  tab_spanner(label="Per 36",ends_with("per_36")) %>%
+  cols_label(num_times_stolen_from_rookie="Steals Against Rookie",
+             num_times_stolen_by_rookie="Steals By Rookie",
+             num_times_fouled_by_rookie="Fouled By Rookie",
+             num_times_fouled_rookie="Foul Against Rookie",
+             num_times_blocked_rookie="Blocks Against Rookie",
+             num_times_blocked_by_rookie="Blocks by Rookie",
+             positive_events_against_rookies_total_per_36="Positive Events",
+             negative_events_against_rookies_total_per_36="Negative Events",
+             net_events_against_rookies_total_per_36="Net Events") %>%
+  fmt_number(ends_with("per_36"),decimals=4) %>%
+  fmt_number(MPG,decimals=1) %>%
+  tab_header(
+    title="Lowest Net Events Against Rookies Per 36 in 2025-2026",
+    subtitle="As at February 12, 2026"
+  ) %>%
+  tab_footnote(
+    footnote="Directly leading to free throws",
+    locations = cells_column_labels(contains("fouled"))
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 50% of team games played",
+    locations = cells_column_labels(GP)
+  ) %>%
+  tab_footnote(
+    footnote="Minimum 12 minutes per game",
+    locations = cells_column_labels(MPG)
+  ) 
+```
+
+Cole Anthony still brings up the rear when looking at net rookie victimization events per 36. Nique Clifford is a rookie himself and has had the ball stolen 10 times by fellow rookies.
+
+### Charts
+
+We can plot minutes per game against net rookie victimization actions per 36. As minutes increase, net rookie victimizations tend towards zero.
+
+```{r welcome_to_the_league_rook_plot}
+events_against_rookies_summ %>% 
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  ggplot(aes(x=MPG,y=net_events_against_rookies_total_per_36,
+             color=PLAYER_NAME))+
+  geom_point()+
+  ggdark::dark_theme_gray()+
+  gghighlight::gghighlight(
+    max(net_events_against_rookies_total_per_36),max_highlight = 10L)+
+  labs(title="Net Rookie Victimization Events Per 36 Minutes",
+       subtitle=">=12 minutes per game & 50% of team games played",
+       x="Minutes Per Game",
+       y="Net Rookie Victimization Events Per 36 Minutes")
+```
+
+Highlighting the top 10, we add Naji Marshall & Derrick White as rookie victimizers with high minute volume.
+
+```{r future_is_now_old_man_plot}
+events_against_rookies_summ %>% 
+  filter(G_PERCENT>=0.5,MPG>=12) %>%
+  ggplot(aes(x=MPG,y=net_events_against_rookies_total_per_36,
+             color=PLAYER_NAME))+
+  geom_point()+
+  ggdark::dark_theme_gray()+
+  gghighlight::gghighlight(
+    max(-net_events_against_rookies_total_per_36),max_highlight = 10L)+
+  labs(title="Net Rookie Victimization Events Per 36 Minutes",
+       subtitle=">=12 minutes per game & 50% of team games played",
+       x="Minutes Per Game",
+       y="Net Rookie Victimization Events Per 36 Minutes")
+```
+
+The bottom 10 contains 3 rookies: the previously mentioned Nique Clifford has been joined by Nolan Traore and Kobe Sanders.
